@@ -1,0 +1,19 @@
+.title > h2 {
+    color: blue;
+    text-align: center;
+}
+.title > p {
+    text-align: center;
+}
+
+.main-content > .html-exp > h1 {
+    color: blue;
+}
+
+.main-content > .css-exp > h1 {
+    color: blue;
+}
+
+.main-content > .js-exp > h1 {
+    color: blue;
+}

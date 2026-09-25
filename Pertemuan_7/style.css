@@ -1,1 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/*body*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( 135deg, lightgreen, aquamarine);
+    color: #333;
+    padding: 40px 20px;
+}
+
+/*container*/
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*header*/
+
+header {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/*card*/
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba( 0, 0, 0, 0.15);
+}
+
+.card h2 {
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+
+/*table*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+/*header-table*/
+
+th {
+    background-color: lightsteelblue;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+/*table-contents*/
+
+td {
+    padding: 13px;
+    border: 1px solid wheat;
+}
+
+/*warna-baris*/
+
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:hover {
+    background-color: wheat;
+}

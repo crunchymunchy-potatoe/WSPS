@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"73d9aaf168e73919","type":"file","file":"Projek Website nya/Referensi/Website ideas.md","x":-240,"y":-260,"width":400,"height":400},
+		{"id":"9ee44116ccf674a0","type":"text","text":"Pastry Website(ayu)","x":220,"y":480,"width":250,"height":60},
+		{"id":"e4e7bf8f6b52944a","type":"file","file":"Projek Website nya/Referensi/Assets/bakery homepage.png","x":620,"y":-372,"width":283,"height":679,"color":"#f2d3ae"},
+		{"id":"e351c04562380d02","type":"text","text":"Libraries :\nAOS animate on scroll","x":961,"y":307,"width":250,"height":60,"color":"5"},
+		{"id":"daceaf98301ec03f","type":"text","text":"Refrence","x":632,"y":-538,"width":250,"height":60},
+		{"id":"2e2b3648484eb2c0","type":"text","text":"Navbar & Footer injected via js","x":961,"y":393,"width":250,"height":54,"color":"5"},
+		{"id":"844db7777ceddda8","type":"text","text":"Technique Used ","x":961,"y":200,"width":250,"height":60},
+		{"id":"db34699a4479d611","type":"text","text":"Dealer Motor(ayu)","x":-556,"y":540,"width":250,"height":60},
+		{"id":"ab1a36ab9d6fd98e","type":"text","text":"Dealer Mobil(rio)","x":-989,"y":53,"width":250,"height":60},
+		{"id":"2b0dfb396be14582","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009141624.png","x":-864,"y":720,"width":716,"height":537},
+		{"id":"dea1a53cf45e0819","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142109.png","x":-1920,"y":53,"width":860,"height":645},
+		{"id":"1264228f3fee6250","type":"text","text":"Bicycle(rio)","x":-523,"y":-463,"width":250,"height":60},
+		{"id":"9d5ec6335202e84e","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142445.png","x":-1813,"y":-1140,"width":1024,"height":768},
+		{"id":"cca14bd0f3eb14ac","type":"text","text":"Coffe(ayu)","x":118,"y":-1012,"width":250,"height":60},
+		{"id":"428a572063a97c9f","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142704.png","x":557,"y":-1360,"width":863,"height":614},
+		{"id":"e233abf79b4a2454","type":"text","text":"Coffee & Pastry","x":1560,"y":-280,"width":250,"height":60},
+		{"id":"7fd8a8c86849d931","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142250.png","x":561,"y":640,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"6c23038fa88e1578","fromNode":"73d9aaf168e73919","fromSide":"bottom","toNode":"9ee44116ccf674a0","toSide":"left"},
+		{"id":"60ea3e639b0aae4e","fromNode":"9ee44116ccf674a0","fromSide":"top","toNode":"e4e7bf8f6b52944a","toSide":"left"},
+		{"id":"9a71faaf19cffae4","fromNode":"e4e7bf8f6b52944a","fromSide":"top","toNode":"daceaf98301ec03f","toSide":"bottom"},
+		{"id":"699a8680a97323b8","fromNode":"e4e7bf8f6b52944a","fromSide":"right","toNode":"844db7777ceddda8","toSide":"top"},
+		{"id":"64660c9af3129cfb","fromNode":"73d9aaf168e73919","fromSide":"bottom","toNode":"db34699a4479d611","toSide":"top"},
+		{"id":"da84ea17d27eb8f0","fromNode":"73d9aaf168e73919","fromSide":"left","toNode":"ab1a36ab9d6fd98e","toSide":"right"},
+		{"id":"20d9ea63a32f00dd","fromNode":"db34699a4479d611","fromSide":"bottom","toNode":"2b0dfb396be14582","toSide":"top"},
+		{"id":"8b9fe113be0f34ca","fromNode":"ab1a36ab9d6fd98e","fromSide":"bottom","toNode":"dea1a53cf45e0819","toSide":"right"},
+		{"id":"9982b1865ef234ed","fromNode":"73d9aaf168e73919","fromSide":"top","toNode":"1264228f3fee6250","toSide":"bottom"},
+		{"id":"dea382b9e9668182","fromNode":"1264228f3fee6250","fromSide":"left","toNode":"9d5ec6335202e84e","toSide":"right"},
+		{"id":"8d7133ab6a00e540","fromNode":"73d9aaf168e73919","fromSide":"right","toNode":"cca14bd0f3eb14ac","toSide":"bottom"},
+		{"id":"10a439b871bfb45d","fromNode":"cca14bd0f3eb14ac","fromSide":"right","toNode":"428a572063a97c9f","toSide":"left"},
+		{"id":"09d120198a9f5a49","fromNode":"428a572063a97c9f","fromSide":"right","toNode":"e233abf79b4a2454","toSide":"top"},
+		{"id":"9eec7a233030046d","fromNode":"e4e7bf8f6b52944a","fromSide":"right","toNode":"e233abf79b4a2454","toSide":"left"},
+		{"id":"443bf7d3f6905164","fromNode":"7fd8a8c86849d931","fromSide":"left","toNode":"9ee44116ccf674a0","toSide":"bottom"}
+	]
+}

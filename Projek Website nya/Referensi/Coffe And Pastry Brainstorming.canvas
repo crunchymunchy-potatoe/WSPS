@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"8089fe2985277dfa","type":"text","text":"https://livingstonebakery.com/home/","x":-280,"y":360,"width":250,"height":80},
+		{"id":"9d0fefe242ad16b7","type":"text","text":"https://ryoku.dev/#install","x":480,"y":380,"width":250,"height":60},
+		{"id":"9208e5ef001478ba","type":"text","text":"Base Refrences\n","x":-409,"y":213,"width":250,"height":60},
+		{"id":"2c5d3fc1beef321a","type":"text","text":"Websites Refrences\n","x":-80,"y":-40,"width":250,"height":60,"color":"6"},
+		{"id":"e970ef60fe497688","type":"text","text":"Style Refrences","x":300,"y":141,"width":250,"height":60},
+		{"id":"78f9c8155f95423b","type":"text","text":"Living Stone Website\n","x":-659,"y":360,"width":250,"height":60},
+		{"id":"7929bf8ba3e6302b","type":"link","url":"https://livingstonebakery.com/home/","x":-979,"y":629,"width":1339,"height":771},
+		{"id":"3f737b488cc7e7b8","type":"link","url":"https://ryoku.dev/#install","x":480,"y":630,"width":1360,"height":770}
+	],
+	"edges":[
+		{"id":"d19eae9ad2a909e7","fromNode":"8089fe2985277dfa","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"},
+		{"id":"4daa378cc5222390","fromNode":"2c5d3fc1beef321a","fromSide":"bottom","toNode":"9208e5ef001478ba","toSide":"right"},
+		{"id":"94420d7863aa23b5","fromNode":"9208e5ef001478ba","fromSide":"bottom","toNode":"8089fe2985277dfa","toSide":"top"},
+		{"id":"f636154ddccf2269","fromNode":"2c5d3fc1beef321a","fromSide":"bottom","toNode":"e970ef60fe497688","toSide":"top"},
+		{"id":"a09633c376ab3c00","fromNode":"e970ef60fe497688","fromSide":"bottom","toNode":"9d0fefe242ad16b7","toSide":"top"},
+		{"id":"8aefd4af4fc3e61a","fromNode":"9d0fefe242ad16b7","fromSide":"bottom","toNode":"3f737b488cc7e7b8","toSide":"top"},
+		{"id":"5611ee2b3676893b","fromNode":"8089fe2985277dfa","fromSide":"left","toNode":"78f9c8155f95423b","toSide":"right"},
+		{"id":"084daad9dfeddfbe","fromNode":"78f9c8155f95423b","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"}
+	]
+}

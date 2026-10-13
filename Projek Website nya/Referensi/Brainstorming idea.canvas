@@ -9,14 +9,14 @@
 		{"id":"844db7777ceddda8","type":"text","text":"Technique Used ","x":961,"y":200,"width":250,"height":60},
 		{"id":"db34699a4479d611","type":"text","text":"Dealer Motor(ayu)","x":-556,"y":540,"width":250,"height":60},
 		{"id":"ab1a36ab9d6fd98e","type":"text","text":"Dealer Mobil(rio)","x":-989,"y":53,"width":250,"height":60},
-		{"id":"2b0dfb396be14582","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009141624.png","x":-864,"y":720,"width":716,"height":537},
-		{"id":"dea1a53cf45e0819","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142109.png","x":-1920,"y":53,"width":860,"height":645},
+		{"id":"2b0dfb396be14582","type":"file","file":"Projek Website nya/Referensi/Assets/Motor.png","x":-864,"y":720,"width":716,"height":537},
+		{"id":"dea1a53cf45e0819","type":"file","file":"Projek Website nya/Referensi/Assets/Car.png","x":-1920,"y":53,"width":860,"height":645},
 		{"id":"1264228f3fee6250","type":"text","text":"Bicycle(rio)","x":-523,"y":-463,"width":250,"height":60},
-		{"id":"9d5ec6335202e84e","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142445.png","x":-1813,"y":-1140,"width":1024,"height":768},
+		{"id":"9d5ec6335202e84e","type":"file","file":"Projek Website nya/Referensi/Assets/Bike.png","x":-1813,"y":-1140,"width":1024,"height":768},
 		{"id":"cca14bd0f3eb14ac","type":"text","text":"Coffe(ayu)","x":118,"y":-1012,"width":250,"height":60},
-		{"id":"428a572063a97c9f","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142704.png","x":557,"y":-1360,"width":863,"height":614},
-		{"id":"e233abf79b4a2454","type":"text","text":"Coffee & Pastry","x":1560,"y":-280,"width":250,"height":60},
-		{"id":"7fd8a8c86849d931","type":"file","file":"Projek Website nya/Referensi/Assets/Pasted image 20261009142250.png","x":561,"y":640,"width":400,"height":400}
+		{"id":"428a572063a97c9f","type":"file","file":"Projek Website nya/Referensi/Assets/Coffe.png","x":557,"y":-1360,"width":863,"height":614},
+		{"id":"e233abf79b4a2454","type":"text","text":"Coffee & Pastry","x":1560,"y":-280,"width":250,"height":60,"color":"6"},
+		{"id":"7fd8a8c86849d931","type":"file","file":"Projek Website nya/Referensi/Assets/Pastry2.png","x":561,"y":640,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"6c23038fa88e1578","fromNode":"73d9aaf168e73919","fromSide":"bottom","toNode":"9ee44116ccf674a0","toSide":"left"},

@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cc8d6442c9f15142",
+        "id": "e1db8211b9ac3bb5",
         "type": "tabs",
         "children": [
           {
-            "id": "5f1ed001a66cf4f9",
+            "id": "146d4f550b633c46",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
-                "viewState": {
-                  "x": 220.1717131280038,
-                  "y": 1134.2707240336497,
-                  "zoom": -0.5780373314023004
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Coffe And Pastry Brainstorming"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -191,11 +184,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "5f1ed001a66cf4f9",
+  "active": "146d4f550b633c46",
   "lastOpenFiles": [
+    "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
+    "Projek Website nya/Projeknya/index.html",
+    "Projek Website nya/Projeknya/navbar.html",
     "Projek Website nya/Projeknya/navbar.Html",
     "Projek Website nya/Referensi/Brainstorming idea.canvas",
-    "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
     "README.md",
     "Projek Website nya/Referensi/Brainstorming idea 1.canvas",
     "Projek Website nya/Referensi/Assets/Coffe.png",

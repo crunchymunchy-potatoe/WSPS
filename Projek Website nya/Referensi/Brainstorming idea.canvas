@@ -15,7 +15,7 @@
 		{"id":"9d5ec6335202e84e","type":"file","file":"Projek Website nya/Referensi/Assets/Bike.png","x":-1813,"y":-1140,"width":1024,"height":768},
 		{"id":"cca14bd0f3eb14ac","type":"text","text":"Coffe(ayu)","x":118,"y":-1012,"width":250,"height":60},
 		{"id":"428a572063a97c9f","type":"file","file":"Projek Website nya/Referensi/Assets/Coffe.png","x":557,"y":-1360,"width":863,"height":614},
-		{"id":"e233abf79b4a2454","type":"text","text":"Coffee & Pastry","x":1560,"y":-280,"width":250,"height":60,"color":"6"},
+		{"id":"e233abf79b4a2454","type":"text","text":"Coffee & Pastry(selected)","x":1560,"y":-280,"width":250,"height":60,"color":"6"},
 		{"id":"7fd8a8c86849d931","type":"file","file":"Projek Website nya/Referensi/Assets/Pastry2.png","x":561,"y":640,"width":400,"height":400}
 	],
 	"edges":[

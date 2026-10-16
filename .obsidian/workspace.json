@@ -11,10 +11,17 @@
             "id": "146d4f550b633c46",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "Projek Website nya/Referensi/Brainstorming idea.canvas",
+                "viewState": {
+                  "x": 1134.386229002552,
+                  "y": -172.6836850726021,
+                  "zoom": -0.6513508331756644
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Brainstorming idea"
             }
           }
         ]
@@ -186,19 +193,20 @@
   },
   "active": "146d4f550b633c46",
   "lastOpenFiles": [
+    "Projek Website nya/Referensi/Website ideas.md",
     "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
+    "Projek Website nya/Referensi/Brainstorming idea.canvas",
+    "README.md",
+    "Projek Website nya/Referensi/design.free",
     "Projek Website nya/Projeknya/index.html",
     "Projek Website nya/Projeknya/navbar.html",
     "Projek Website nya/Projeknya/navbar.Html",
-    "Projek Website nya/Referensi/Brainstorming idea.canvas",
-    "README.md",
     "Projek Website nya/Referensi/Brainstorming idea 1.canvas",
     "Projek Website nya/Referensi/Assets/Coffe.png",
     "Projek Website nya/Referensi/Assets/Pastry2.png",
     "Projek Website nya/Referensi/Assets/Bike.png",
     "Projek Website nya/Referensi/Assets/Car.png",
     "Projek Website nya/Referensi/Assets/Motor.png",
-    "Projek Website nya/Referensi/Website ideas.md",
     "Projek Website nya/Referensi/Assets/Untitled.md",
     "Website Projek sekolah/Website ideas.md",
     "Website Projek sekolah",

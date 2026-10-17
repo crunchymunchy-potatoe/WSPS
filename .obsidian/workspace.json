@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e1db8211b9ac3bb5",
+        "id": "6c22ea8c6734435d",
         "type": "tabs",
         "children": [
           {
-            "id": "146d4f550b633c46",
+            "id": "d0bd996d15010097",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Projek Website nya/Referensi/Brainstorming idea.canvas",
-                "viewState": {
-                  "x": 1134.386229002552,
-                  "y": -172.6836850726021,
-                  "zoom": -0.6513508331756644
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Brainstorming idea"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -191,14 +184,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "146d4f550b633c46",
+  "active": "d0bd996d15010097",
   "lastOpenFiles": [
+    "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "Projek Website nya/Referensi/Mockup Website.free",
     "Projek Website nya/Referensi/Assets/ground0-footer.svg",
     "Projek Website nya/Referensi/Assets/ground0-logo-seal.svg",
     "Projek Website nya/Referensi/Website ideas.md",
     "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
-    "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "README.md",
     "Projek Website nya/Referensi/design.free",
     "Projek Website nya/Projeknya/index.html",

@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+/*navbar-styling*/
+.hdr-logo {
+    width: 30px;
+    height: 30px;
+}
+.hdr-name{
+   text-decoration: none;
+   color: white;
+}

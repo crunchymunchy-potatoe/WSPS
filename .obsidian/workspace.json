@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6c22ea8c6734435d",
+        "id": "c136ed4104a82bb6",
         "type": "tabs",
         "children": [
           {
-            "id": "d0bd996d15010097",
+            "id": "5f6bf572375ef6e1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -184,7 +184,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "d0bd996d15010097",
+  "active": "5f6bf572375ef6e1",
   "lastOpenFiles": [
     "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "Projek Website nya/Referensi/Mockup Website.free",

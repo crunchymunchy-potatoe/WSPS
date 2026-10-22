@@ -7,7 +7,12 @@ body {
     width: 30px;
     height: 30px;
 }
-.hdr-name{
-   text-decoration: none;
-   color: white;
+.hdr {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15rem;
+}
+.hdr a {
+    color: white;
+    text-decoration: none;
 }

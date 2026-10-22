@@ -1,18 +1,71 @@
+
+* {
+   font-family: "Space Grotesk", sans-serif;
+}
+
 body {
     background-color: black;
 }
 
 /*navbar-styling*/
-.hdr-logo {
-    width: 30px;
-    height: 30px;
-}
+
 .hdr {
     display: flex;
     flex-direction: row;
-    margin-left: 15rem;
+    align-items: center;
+    border-bottom: 0.5px solid lightslategray;
+    padding-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .hdr a {
     color: white;
     text-decoration: none;
+    font-weight: normal;
+}
+
+/*logo-styling(left one)*/
+.hdr-logo {
+    width: 40px;
+    height: 40px;
+}
+.hdr-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.hdr-brand {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/*navbar-texts-styling*/
+.hdr-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+.hdr-nav a {
+   color: slategray;
+}
+
+/*nav-est&time-styling*/
+.hdr-right {
+    display: flex;
+    gap: 2.4rem;
+}
+.hdr-right a {
+    color: slategray;
+}
+.est {
+   border: 1px solid slategray;
+   padding: 8px;
+}
+.time {
+   border: 1px solid slategray;
+   padding: 8px;
 }

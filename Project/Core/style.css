@@ -14,8 +14,8 @@ body {
     flex-direction: row;
     align-items: center;
     border-bottom: 0.5px solid lightslategray;
-    padding-bottom: 0.7rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.3rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -23,15 +23,16 @@ body {
     color: white;
     text-decoration: none;
     font-weight: normal;
+    transition: 0.3s ease-in-out;
 }
 
 /*logo-styling(left one)*/
 .hdr-logo {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 .hdr-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
 .hdr-brand {
@@ -44,13 +45,25 @@ body {
 .hdr-nav {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
     margin-left: auto;
     margin-right: 5rem;
 }
 .hdr-nav a {
    color: slategray;
+   font-size: 1rem;
+   position: relative;
+}
+.hdr-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 0;
+    bottom: -2px;
+    background: white;
+    transition: width 0.4s ease-in-out;
 }
 
 /*nav-est&time-styling*/
@@ -68,4 +81,26 @@ body {
 .time {
    border: 1px solid slategray;
    padding: 8px;
+}
+
+/*navbar-responsive*/
+
+/*navbar-text-responsive*/
+.hdr-nav a:hover {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+.hdr-nav a:hover::after {
+    width: 100%;
+}
+
+/*navbar-est&time-responsive*/
+.hdr-right a:hover {
+   color: white;
+}
+.est:hover {
+    border: 1px solid white;
+}
+.time:hover {
+    border: 1px solid white;
 }

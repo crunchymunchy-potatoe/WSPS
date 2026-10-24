@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c136ed4104a82bb6",
+        "id": "a3d7f954fe2f89d2",
         "type": "tabs",
         "children": [
           {
-            "id": "5f6bf572375ef6e1",
+            "id": "f93e46b018975e3c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -184,8 +184,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "5f6bf572375ef6e1",
+  "active": "f93e46b018975e3c",
   "lastOpenFiles": [
+    "Project/Refrences/Brainstorming idea.canvas",
+    "Project/Refrences/Coffe And Pastry Brainstorming.canvas",
     "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "Projek Website nya/Referensi/Mockup Website.free",
     "Projek Website nya/Referensi/Assets/ground0-footer.svg",

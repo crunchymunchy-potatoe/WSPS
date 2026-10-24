@@ -108,13 +108,71 @@ body {
 
 
 /*footer-styling*/
+
+/*foot-right*/
+.foot {
+    display: flex;
+}
 .foot-logo {
    width: 50px;
    height: 50px;
+}
+.foot-brand {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    flex-direction: column;
 }
 .foot-brand h1 {
     font-size: 1.7rem;
 }
 .foot-brand p {
     font-size: 0.7rem;
+}
+
+/*foot-mid*/
+.foot-exp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 30rem;
+    gap: 1.6rem;
+}
+.foot-exp a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: slategray;
+    transition: 0.35s ease-in-out;
+}
+.foot-exp h4 {
+    text-transform: uppercase;
+    color: slategray;
+    margin-bottom: 2rem;
+}
+.foot-exp li {
+    list-style: none;
+}
+
+/*foot-right*/
+.foot-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    gap: 1.6rem;
+}
+.foot-right h4 {
+    text-transform: uppercase;
+    color: slategray;
+    margin-bottom: 2rem;
+}
+.foot-right li {
+    text-decoration: none;
+    color: slategray;
+    list-style: none;
+}
+
+/*footer-responsive*/
+.foot-exp a:hover {
+    color: white;
 }

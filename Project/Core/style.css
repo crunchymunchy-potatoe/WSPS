@@ -78,9 +78,15 @@ body {
    border: 1px solid slategray;
    padding: 8px;
 }
+.est span {
+    color: slategray;
+}
 .time {
    border: 1px solid slategray;
    padding: 8px;
+}
+.time span {
+    color: slategray;
 }
 
 /*navbar-responsive*/
@@ -101,8 +107,14 @@ body {
 .est:hover {
     border: 1px solid white;
 }
+.est span:hover {
+    color: white;
+}
 .time:hover {
     border: 1px solid white;
+}
+.time span:hover {
+    color: white;
 }
 
 
@@ -157,8 +169,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 10rem;
     gap: 2.5rem;
+    width: 600px;
 }
 .foot-right h4 {
     color: slategray;
@@ -168,10 +181,22 @@ body {
    color: slategray;
    text-transform: uppercase;
 }
-.line {
-    flex-grow: 1;
-    height: 1px;
-    color: white;
+.foot-visit {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.foot-visit .label {
+    width: 80px;
+}
+.foot-visit .line {
+   flex: 1;
+   height: 1px;
+   background-color: slategray;
+   margin: 0 1rem;
+}
+.foot-visit .value {
+    color: slategray;
 }
 
 /*footer-responsive*/

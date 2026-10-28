@@ -146,7 +146,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: 30rem;
+    margin-left: 25rem;
     gap: 1.6rem;
 }
 .foot-exp a {
@@ -170,8 +170,9 @@ body {
     flex-direction: column;
     margin-top: 5rem;
     margin-left: 10rem;
+    margin-right: 7.5rem;
     gap: 2.5rem;
-    width: 600px;
+    width: 550px;
 }
 .foot-right h4 {
     color: slategray;

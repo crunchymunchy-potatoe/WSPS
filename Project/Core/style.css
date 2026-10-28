@@ -120,10 +120,18 @@ body {
 
 /*footer-styling*/
 
-/*foot-right*/
 .foot {
     display: flex;
+    flex-direction: column;
 }
+
+.foot-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/*foot-left*/
+
 .foot-logo {
    width: 50px;
    height: 50px;
@@ -198,6 +206,25 @@ body {
 }
 .foot-visit .value {
     color: slategray;
+}
+
+/*foot-bottom*/
+.foot-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid slategray;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.foot-bottom span {
+    color: slategray;
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 /*footer-responsive*/

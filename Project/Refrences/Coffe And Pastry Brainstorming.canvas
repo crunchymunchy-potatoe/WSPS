@@ -7,7 +7,14 @@
 		{"id":"e970ef60fe497688","type":"text","text":"Style Refrences","x":300,"y":141,"width":250,"height":60},
 		{"id":"78f9c8155f95423b","type":"text","text":"Living Stone Website\n","x":-659,"y":360,"width":250,"height":60},
 		{"id":"7929bf8ba3e6302b","type":"link","url":"https://livingstonebakery.com/home/","x":-979,"y":629,"width":1339,"height":771},
-		{"id":"3f737b488cc7e7b8","type":"link","url":"https://ryoku.dev/#install","x":480,"y":630,"width":1360,"height":770}
+		{"id":"3f737b488cc7e7b8","type":"link","url":"https://ryoku.dev/#install","x":480,"y":630,"width":1360,"height":770},
+		{"id":"e74b5ee49f60df2b","type":"text","text":"Home Page Design","x":-880,"y":1800,"width":250,"height":60},
+		{"id":"d3849b30bf208686","type":"text","text":"Minimalist Menu","x":-1188,"y":2160,"width":250,"height":60},
+		{"id":"d65de2987511d0a3","type":"text","text":"Transparent Background","x":-880,"y":2161,"width":250,"height":60},
+		{"id":"b667d7c945437cc8","type":"text","text":"Same Design Placement as\nRyoku ","x":-137,"y":2204,"width":271,"height":88},
+		{"id":"13dd6f105bc36735","type":"text","text":"Text RIght","x":-446,"y":2218,"width":250,"height":60},
+		{"id":"994331b0a453a313","type":"text","text":"ICONS Left","x":194,"y":2218,"width":280,"height":74},
+		{"id":"4b20fe30dea0bc61","type":"text","text":"Can Cause Balance Conflict With ==Navbar==","x":-823,"y":2349,"width":257,"height":103}
 	],
 	"edges":[
 		{"id":"d19eae9ad2a909e7","fromNode":"8089fe2985277dfa","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"},
@@ -17,6 +24,12 @@
 		{"id":"a09633c376ab3c00","fromNode":"e970ef60fe497688","fromSide":"bottom","toNode":"9d0fefe242ad16b7","toSide":"top"},
 		{"id":"8aefd4af4fc3e61a","fromNode":"9d0fefe242ad16b7","fromSide":"bottom","toNode":"3f737b488cc7e7b8","toSide":"top"},
 		{"id":"5611ee2b3676893b","fromNode":"8089fe2985277dfa","fromSide":"left","toNode":"78f9c8155f95423b","toSide":"right"},
-		{"id":"084daad9dfeddfbe","fromNode":"78f9c8155f95423b","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"}
+		{"id":"084daad9dfeddfbe","fromNode":"78f9c8155f95423b","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"},
+		{"id":"000899fd8beb7699","fromNode":"d3849b30bf208686","fromSide":"right","toNode":"d65de2987511d0a3","toSide":"left"},
+		{"id":"8feba6cdc5f6a351","fromNode":"d65de2987511d0a3","fromSide":"bottom","toNode":"4b20fe30dea0bc61","toSide":"top"},
+		{"id":"57a96d8277c566af","fromNode":"e74b5ee49f60df2b","fromSide":"bottom","toNode":"d3849b30bf208686","toSide":"top"},
+		{"id":"afb19097a224aadf","fromNode":"e74b5ee49f60df2b","fromSide":"bottom","toNode":"b667d7c945437cc8","toSide":"top"},
+		{"id":"b977107f7773702b","fromNode":"b667d7c945437cc8","fromSide":"left","toNode":"13dd6f105bc36735","toSide":"right"},
+		{"id":"c390c60b15f74d37","fromNode":"b667d7c945437cc8","fromSide":"right","toNode":"994331b0a453a313","toSide":"left"}
 	]
 }

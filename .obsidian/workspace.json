@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "35b3eb546fc18fc3",
+        "id": "2149e78ded3cccc2",
         "type": "tabs",
         "children": [
           {
-            "id": "a63298fdede66c21",
+            "id": "c3b0d6b632a6809f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -75,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,13 +184,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "a63298fdede66c21",
+  "active": "d3d2788688e20fa7",
   "lastOpenFiles": [
     "Project/Refrences/Coffe And Pastry Brainstorming.canvas",
+    "Project/Assets/main-page-wireframe.svg",
+    "Project/Refrences/Intial Brainstorming.canvas",
     "Pasted image 20261030092638.png",
     "Pasted image 20261030091922.png",
     "Project/Refrences/Website ideas.md",
-    "Project/Refrences/Intial Brainstorming.canvas",
     "README.md",
     "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "Projek Website nya/Referensi/Mockup Website.free",
@@ -211,7 +211,6 @@
     "Projek Website nya/Referensi/Assets/Motor.png",
     "Projek Website nya/Referensi/Assets/Untitled.md",
     "Website Projek sekolah/Website ideas.md",
-    "Website Projek sekolah",
-    "Projek Website nya/Referensi/Assets/bakery homepage.png"
+    "Website Projek sekolah"
   ]
 }

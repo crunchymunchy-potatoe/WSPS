@@ -14,7 +14,10 @@
 		{"id":"b667d7c945437cc8","type":"text","text":"Same Design Placement as\nRyoku ","x":-137,"y":2204,"width":271,"height":88},
 		{"id":"13dd6f105bc36735","type":"text","text":"Text RIght","x":-446,"y":2218,"width":250,"height":60},
 		{"id":"994331b0a453a313","type":"text","text":"ICONS Left","x":194,"y":2218,"width":280,"height":74},
-		{"id":"4b20fe30dea0bc61","type":"text","text":"Can Cause Balance Conflict With ==Navbar==","x":-823,"y":2349,"width":257,"height":103}
+		{"id":"4b20fe30dea0bc61","type":"text","text":"Can Cause Balance Conflict With ==Navbar==","x":-823,"y":2349,"width":257,"height":103},
+		{"id":"44e6fc61e0904388","x":-116,"y":2452,"width":250,"height":60,"color":"6","type":"text","text":"CHOSEN"},
+		{"id":"efe0277cc4d22cd1","x":-514,"y":2560,"width":1046,"height":1272,"type":"file","file":"Project/Assets/main-page-wireframe.svg"},
+		{"id":"3077ed77b13184b5","x":165,"y":2410,"width":250,"height":60,"type":"text","text":"Mockup/Blueprint Created by Claude"}
 	],
 	"edges":[
 		{"id":"d19eae9ad2a909e7","fromNode":"8089fe2985277dfa","fromSide":"bottom","toNode":"7929bf8ba3e6302b","toSide":"top"},
@@ -30,6 +33,9 @@
 		{"id":"57a96d8277c566af","fromNode":"e74b5ee49f60df2b","fromSide":"bottom","toNode":"d3849b30bf208686","toSide":"top"},
 		{"id":"afb19097a224aadf","fromNode":"e74b5ee49f60df2b","fromSide":"bottom","toNode":"b667d7c945437cc8","toSide":"top"},
 		{"id":"b977107f7773702b","fromNode":"b667d7c945437cc8","fromSide":"left","toNode":"13dd6f105bc36735","toSide":"right"},
-		{"id":"c390c60b15f74d37","fromNode":"b667d7c945437cc8","fromSide":"right","toNode":"994331b0a453a313","toSide":"left"}
+		{"id":"c390c60b15f74d37","fromNode":"b667d7c945437cc8","fromSide":"right","toNode":"994331b0a453a313","toSide":"left"},
+		{"id":"35dc4e9f5e5cc700","fromNode":"b667d7c945437cc8","fromSide":"bottom","toNode":"44e6fc61e0904388","toSide":"top"},
+		{"id":"f69c67d042b8ae72","fromNode":"44e6fc61e0904388","fromSide":"bottom","toNode":"efe0277cc4d22cd1","toSide":"top"},
+		{"id":"491764ba34e7d6ab","fromNode":"efe0277cc4d22cd1","fromSide":"top","toNode":"3077ed77b13184b5","toSide":"bottom"}
 	]
 }

@@ -231,3 +231,21 @@ body {
 .foot-exp a:hover {
     color: white;
 }
+
+/*main-styling*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-brand {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-img {
+    height: 300px;
+    width: 300px;
+}

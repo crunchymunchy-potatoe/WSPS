@@ -21,10 +21,10 @@ I'm learning web development and need a coding helper for my school group projec
 
 ## Design
 
-- Style inspired by the Ryoku Linux website (ryoku.dev): black background, white and slate-gray text, thin outlined boxes, sharp corners, small uppercase labels.
-- Logo: the white kanji 地 (`cafe-logo-white.png`) next to the name "GROUND ZERO" in uppercase.
-- Planned fonts: Instrument Serif (headings), Space Grotesk (nav and body), JetBrains Mono (small labels).
-- Planned palette (approximate):
+- Style inspired by the Ryoku Linux website (ryoku.dev): black background, cream and muted-gray text, thin outlined boxes, sharp corners, small uppercase labels.
+- Logo: the white kanji 地 (`cafe-logo-white.png`) next to the brand name "Z.R.A.D.A" in uppercase (the project itself is still called Ground Zero).
+- Fonts (loaded from Google Fonts): Instrument Serif (headings), Space Grotesk (nav and body), JetBrains Mono (small labels).
+- Palette:
 
 | Role | Color |
 |---|---|
@@ -33,60 +33,52 @@ I'm learning web development and need a coding helper for my school group projec
 | Hairlines | `#3A3835` |
 | Rust accent | `#C4673A` |
 
-- The navbar and footer mockups are finished in Lunacy. The footer mockup has 3 columns (brand, explore links, visit info) and a bottom strip.
+- The header and footer mockups are finished in Lunacy. The footer mockup has 3 columns (brand, explore links, visit info) and a bottom strip.
+- The header and footer markup now live directly inside `index.html`. The old standalone `navbar.html` and `footer.html` files were removed, because plain HTML cannot include one file inside another.
 
 ## Files
 
 ```
-Project/Core/navbar.html
-Project/Core/style.css
-Project/Assets/        (logos and images)
-Project/Refrences/     (notes, sic spelling)
+Project/Core/index.html    (home page: header, main, footer)
+Project/Core/style.css     (all styles, design tokens in :root)
+Project/Assets/            (logos and images)
+Project/Refrences/         (notes, sic spelling)
 ```
 
-## Navbar HTML structure
+## Header HTML structure
 
 ```html
 <nav class="hdr">
-  <div class="hdr-brand">  <!-- img.hdr-logo + a.hdr-name ("Ground Zero") -->
-  <ul class="hdr-nav">     <!-- li > a: Menu, Shop, About Us, Contacts Us (typo, should be "Contact Us"), Visit Us -->
+  <div class="hdr-brand">  <!-- img.hdr-logo + a.hdr-name ("Z.R.A.D.A") -->
+  <ul class="hdr-nav">     <!-- li > a: Home, Menu, About Us, Contact Us -->
   <div class="hdr-right">  <!-- a.time ("OPEN 9AM-10PM") and a.est ("Est 2027") -->
 </nav>
 ```
 
-All links currently have `href=""`. I'm going to change them to `#`.
+The links are now section anchors inside `index.html` (`#top`, `#featured`, `#story`, `#visit`) instead of empty `href=""` values.
 
 ## CSS state
 
-- `.hdr` is a flex row with `align-items: center`, padding, and a hairline `border-bottom`.
-- `.hdr-brand` is a flex container with a gap, items centered.
-- `.hdr-nav` is a flex row with a gap and no list bullets, with `margin-left: auto` and `margin-right: 5rem`.
-- Nav links are `slategray`, and white on hover (`.hdr-nav a:hover`).
-- `.hdr-nav a` already has `position: relative`.
-- `.hdr-right` is a flex container with a gap.
-- The badges (`.time` and `.est`) have a `1px solid slategray` border and padding, and turn white on hover.
-- The `transition` is currently inside the hover rule, and I plan to move it into the normal-state rules.
+- `style.css` has a `:root` block with the palette (`--cream`, `--muted`, `--line`, `--rust`, `--bg`) and the three font families, so the whole page shares one design system.
+- `.hdr` is a flex row with the hairline `border-bottom`; its horizontal padding is calculated so the logo lines up with the 1200px content column.
+- The nav links have the sliding underline: `.hdr-nav a::after` starts at `width: 0` and grows to `100%` on hover.
+- The `.time` and `.est` badges share one hover rule (`.time:hover, .est:hover`), and transitions now live in the normal-state rules.
+- The home page sections are `.hero`, `.featured`, `.story`, and `.visit`, followed by `.foot`.
+- The CSS is responsive: the nav wraps at 860px, cards go from 3 → 2 → 1 columns, and the member cards always show names on touch screens.
 
 ## Where I am right now
 
-I'm making the **sliding underline** for the nav links: it should grow from left to right on hover, slightly slower than the text turns white. My plan:
+The complete home page is built and styled from the blueprint: navbar, hero, featured bundles, story with the five member letters, visit details, and footer.
 
-1. `.hdr-nav a` gets `position: relative` (done).
-2. `.hdr-nav a::after` gets:
-   - `content: ""` (an empty string, I'm stuck here)
-   - `position: absolute`, `left: 0`, a small negative `bottom`
-   - `height: 1px`, `width: 0`, a white `background`
-   - `transition: width 0.5s`
-3. `.hdr-nav a:hover::after` sets `width: 100%`.
-4. Remove `text-decoration: underline` from the hover rule, so the instant browser underline doesn't show.
+Next steps are separate pages (Menu, About Us, Contact Us), real final copy, and double-checking that the images look right in the browser.
 
 ## Other things left
 
-- [ ] Fix the "Contacts Us" typo and change the `href=""` values to `#`.
-- [ ] Move the transitions into the normal-state rules.
-- [ ] Group `.est:hover` and `.time:hover` into one rule with a comma.
-- [ ] Rename the CSS comments that say "responsive" to "hover".
-- [ ] Commit the navbar to Git.
-- [ ] Build the footer from the Lunacy mockup.
-- [ ] Add more pages.
-- [ ] Later: make it mobile responsive.
+- [x] Fix the "Contacts Us" typo and use real anchor links.
+- [x] Move the transitions into the normal-state rules.
+- [x] Group `.est:hover` and `.time:hover` into one rule.
+- [x] Rename the CSS comments that say "responsive" to "hover".
+- [x] Build the header and footer into `index.html`.
+- [x] Make the home page mobile responsive.
+- [ ] Add the separate Menu / About Us / Contact Us pages.
+- [ ] Replace placeholder story copy and member names if needed.

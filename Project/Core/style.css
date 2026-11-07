@@ -128,7 +128,7 @@ ul {
     color: var(--bg);
 }
 
-/* navbar ----------------------------------------------------------------- */
+/* header — used by the <nav class="hdr"> inside index.html ---------------- */
 
 .hdr {
     display: flex;
@@ -552,7 +552,7 @@ ul {
     transform: scale(1.04);
 }
 
-/* footer ----------------------------------------------------------------- */
+/* footer — used by the <footer class="foot"> inside index.html ------------ */
 
 .foot {
     width: 100%;

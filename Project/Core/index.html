@@ -1,55 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Zrada-Cafe</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z.R.A.D.A — Coffee &amp; Pastry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
 
-<main>
+    <!--navbar-->
+    <nav class="hdr">
 
-   <section class="hero">
-      <div class="hero-brand">
-          <img class="foot-logo" src="/Project/Assets/Old-Logo/cafe-logo-white.png" alt="Logo Kafe">
-          <h1>Z.R.A.D.A</h1>
-          <h4>Stay Grounded, Always Sincere</h4>
-          <p>地に足をつけて、いつも誠実に</p>
-          <button>VISIT MENU</button>
-          <button>VISIT US</button>
-      </div>
-
-      <img class="hero-img" src="/Project/Assets/hero-img-temp.jpg" alt="rio">
-
-   </section>
-
-   <section class="featured">
-
-       <div class="bundling">
-        <img src="" alt="">
-        <h2>The Early Riser</h2>
-        <p>Bold Americano with a flaky, buttery croissant. The perfect way to start your morning.</p>
-        <span>Rp.49.000</span>
-       </div>
-
-       <div class="bundling">
-        <img src="" alt="">
-        <h2>The Sweet Break</h2>
-        <p>Smooth Caffè Latte with a warm, soft cinnamon roll. Your afternoon pick-me-up.</p>
-        <span>Rp.59.000</span>
-       </div>
-
-       <div class="bundling">
-        <img src="" alt="">
-        <h2>The Sweet Treat</h2>
-        <p>Creamy Caffè Latte with a slice of rich New York Cheesecake. Slow down and indulge.</p>
-        <span>Rp.69.000</span>
+        <!--logo-->
+        <div class="hdr-brand">
+            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
         </div>
 
-   </section>
+        <!--nav-main-->
+        <ul class="hdr-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#featured">Menu</a></li>
+            <li><a href="#story">About Us</a></li>
+            <li><a href="#visit">Contact Us</a></li>
+        </ul>
 
-</main>
+        <!--nav-blocks-->
+        <div class="hdr-right">
+            <a class="time" href="#visit"><span>OPEN 9AM-10PM</span></a>
+            <a class="est" href="#story"><span>Est 2027</span></a>
+        </div>
+
+    </nav>
+
+    <main class="page">
+
+        <!--hero-->
+        <section class="hero" aria-labelledby="hero-title">
+
+            <div class="hero-copy">
+                <p class="eyebrow">Coffee &amp; Pastry · Gianyar</p>
+                <h1 class="hero-title" id="hero-title">Z.R.A.D.A</h1>
+                <p class="hero-slogan">Down to Earth, Always Grounded</p>
+                <p class="hero-jp" lang="ja">謙虚に、地に足をつけて</p>
+
+                <div class="hero-actions">
+                    <a class="btn" href="#featured">View Menu</a>
+                    <a class="btn" href="#visit">Visit Us</a>
+                </div>
+            </div>
+
+            <figure class="hero-visual">
+                <img src="../Assets/hero-img.png" alt="A cup of Zrada coffee">
+            </figure>
+
+        </section>
+
+        <!--featured-->
+        <section class="featured" id="featured" aria-labelledby="featured-title">
+
+            <div class="section-head">
+                <h2 class="eyebrow" id="featured-title">Featured</h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
+                    <h3>The Early Riser</h3>
+                    <p>Bold Americano with a flaky, buttery croissant. The perfect way to start your morning.</p>
+                    <span class="price">Rp.49.000</span>
+                </article>
+
+                <article class="card">
+                    <img src="../Assets/2nd-bundle-ascii.png" alt="The Sweet Break bundle">
+                    <h3>The Sweet Break</h3>
+                    <p>Smooth Caffè Latte with a warm, soft cinnamon roll. Your afternoon pick-me-up.</p>
+                    <span class="price">Rp.59.000</span>
+                </article>
+
+                <article class="card">
+                    <img src="../Assets/3rd-bundle-ascii.png" alt="The Sweet Treat bundle">
+                    <h3>The Sweet Treat</h3>
+                    <p>Creamy Caffè Latte with a slice of rich New York Cheesecake. Slow down and indulge.</p>
+                    <span class="price">Rp.69.000</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--story-->
+        <section class="story" id="story" aria-labelledby="story-title">
+
+            <div class="section-head">
+                <h2 class="eyebrow" id="story-title">Our Story</h2>
+            </div>
+
+            <div class="story-grid">
+
+                <div class="story-copy">
+                    <h2 class="story-heading">Slow mornings,<br>honest coffee.</h2>
+                    <p>Zrada started as a small idea between five friends: a place to slow down, share a table, and drink coffee made with care. We roast in small batches, bake every morning, and keep the room warm for anyone who needs to stay a little longer. Down to earth, always grounded — that is how we treat both the cup and the people around it.</p>
+                    <a class="btn" href="#">About Us</a>
+                </div>
+
+                <div class="story-members" aria-label="The five people behind Zrada">
+                    <span class="member">
+                        <span class="member-letter">Z</span>
+                        <span class="member-name">Zgr</span>
+                    </span>
+                    <span class="member">
+                        <span class="member-letter">R</span>
+                        <span class="member-name">Rio</span>
+                    </span>
+                    <span class="member">
+                        <span class="member-letter">A</span>
+                        <span class="member-name">Amy</span>
+                    </span>
+                    <span class="member">
+                        <span class="member-letter">D</span>
+                        <span class="member-name">Dhira</span>
+                    </span>
+                    <span class="member">
+                        <span class="member-letter">A</span>
+                        <span class="member-name">Ayu</span>
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--visit-->
+        <section class="visit" id="visit" aria-labelledby="visit-title">
+
+            <div class="section-head">
+                <h2 class="eyebrow" id="visit-title">Visit</h2>
+            </div>
+
+            <div class="visit-grid">
+
+                <div class="visit-list">
+
+                    <div class="visit-row">
+                        <span class="label">Hours</span>
+                        <span class="line"></span>
+                        <span class="value">9AM–10PM</span>
+                    </div>
+
+                    <div class="visit-row">
+                        <span class="label">Address</span>
+                        <span class="line"></span>
+                        <span class="value">Bitera, Gianyar</span>
+                    </div>
+
+                    <div class="visit-row">
+                        <span class="label">Email</span>
+                        <span class="line"></span>
+                        <span class="value">zrada@company.co</span>
+                    </div>
+
+                </div>
+
+                <figure class="visit-media">
+                    <img src="../Assets/Pasted%20image%2020261030091922.png" alt="Inside the Zrada café">
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <footer class="foot">
+
+        <div class="foot-content">
+
+            <!--footer-left-->
+            <div class="foot-brand">
+                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+                <h1>Down to Earth, Always Grounded</h1>
+                <p>謙虚に、地に足をつけて</p>
+            </div>
+
+            <!--footer-mid-->
+            <div class="foot-exp">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#featured">Menu</a></li>
+                    <li><a href="#story">About Us</a></li>
+                    <li><a href="#visit">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--footer-right-->
+            <div class="foot-right">
+
+                <h4>Visit</h4>
+
+                <div class="foot-visit">
+                    <span class="label">Hours</span>
+                    <span class="line"></span>
+                    <span class="value">9AM-10PM</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Address</span>
+                    <span class="line"></span>
+                    <span class="value">Bitera, Gianyar</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Email</span>
+                    <span class="line"></span>
+                    <span class="value">zrada@company.co</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-bottom-->
+        <div class="foot-bottom">
+            <span class="bottom-left">© 2027 GROUND 0</span>
+            <span class="bottom-right">MADE BY GROUP 3</span>
+        </div>
+
+    </footer>
 
 </body>
 </html>

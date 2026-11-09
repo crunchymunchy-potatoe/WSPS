@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Z.R.A.D.A Coffee & Pastry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- ================================
+         NAVBAR — copied from index.html
+         TODO: wire up hrefs to real pages later
+         ================================ -->
+    <nav class="hdr">
+        <div class="hdr-brand">
+            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+        </div>
+        <ul class="hdr-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#featured">Menu</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+        <div class="hdr-right">
+            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
+            <a class="est" href=""><span>Est 2027</span></a>
+        </div>
+    </nav>
+
+    <!-- ================================
+         MAIN CONTENT — contact page
+         ================================ -->
+    <main class="page">
+
+        <!-- Page header: eyebrow + h1 + intro -->
+        <section class="page-head" aria-labelledby="contact-title">
+            <p class="eyebrow">Contact</p>
+            <h1 id="contact-title">Contact us</h1>
+            <p>Got questions or want to order ahead? Drop us a message below and we’ll get back to you.</p>
+        </section>
+
+        <!-- Two-column layout: form on left, info + FAQ on right -->
+        <section class="contact-main">
+
+            <!-- LEFT COLUMN: CONTACT FORM -->
+            <!-- No backend: uses mailto so it works on static HTML only -->
+            <form action="mailto:zrada@company.co" method="POST" enctype="text/plain" class="contact-form">
+
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="e.g. Catering inquiry">
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="What can we help you with?"></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <!-- RIGHT COLUMN: INFO + FAQ -->
+            <div class="contact-info">
+
+                <!-- Info rows -->
+                <div class="info-row">
+                    <span class="label">Phone</span>
+                    <span class="value">+62 812-3456-7890</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Email</span>
+                    <span class="value">zrada@company.co</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Instagram</span>
+                    <span class="value">@zrada.coffee</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Reply Time</span>
+                    <span class="value">1-2 days</span>
+                </div>
+
+                <!-- FAQ: <details> + <summary> -->
+                <div class="faq">
+                    <details>
+                        <summary>Do you take walk-ins?</summary>
+                        <p>Yes, walk-ins are welcome daily from 9AM to 10PM.</p>
+                    </details>
+                    <details>
+                        <summary>Can I order ahead?</summary>
+                        <p>Use the contact form above and we’ll reply within 1-2 days.</p>
+                    </details>
+                    <details>
+                        <summary>Where are you located?</summary>
+                        <p>Bitera, Gianyar.</p>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================
+         FOOTER — copied from index.html
+         ================================ -->
+    <footer class="foot">
+        <div class="foot-content">
+            <div class="foot-brand">
+                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+                <h1>Down to Earth, Always Grounded</h1>
+                <p>謙虚に、地に足をつけて</p>
+            </div>
+            <div class="foot-exp">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#featured">Menu</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-right">
+                <h4>Visit</h4>
+                <div class="foot-visit">
+                    <span class="label">Hours</span>
+                    <span class="line"></span>
+                    <span class="value">9AM-10PM</span>
+                </div>
+                <div class="foot-visit">
+                    <span class="label">Address</span>
+                    <span class="line"></span>
+                    <span class="value">Bitera, Gianyar</span>
+                </div>
+                <div class="foot-visit">
+                    <span class="label">Email</span>
+                    <span class="line"></span>
+                    <span class="value">zrada@company.co</span>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span class="bottom-left">© 2027 GROUND 0</span>
+            <span class="bottom-right">MADE BY GROUP 3</span>
+        </div>
+    </footer>
+
+</body>
+</html>

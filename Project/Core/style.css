@@ -654,3 +654,136 @@ ul {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ==========================================================================
+   Contact page additions
+   ========================================================================== */
+
+.page-head {
+    margin-top: var(--section-space);
+}
+
+.contact-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 5vw, 4rem);
+    margin-top: var(--section-space);
+    align-items: flex-start;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-form label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--line);
+    background: var(--bg-soft);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid var(--rust);
+    border-color: var(--rust);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+.contact-form button.btn {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.contact-info {
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.info-row .label {
+    min-width: 6rem;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.info-row .value {
+    color: var(--cream);
+    font-size: 0.84rem;
+    text-align: right;
+}
+
+.faq {
+    margin-top: 1rem;
+}
+
+.faq details {
+    border: 1px solid var(--line);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    background: var(--bg-soft);
+}
+
+.faq summary {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cream);
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq p {
+    margin-top: 0.6rem;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.5;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 760px) {
+    .contact-main {
+        flex-direction: column;
+    }
+    .contact-info {
+        order: -1;
+    }
+}

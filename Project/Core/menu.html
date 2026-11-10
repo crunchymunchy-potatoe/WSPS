@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Z.R.A.D.A Coffee & Pastry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- ================================
+         NAVBAR — shared across all pages
+         ================================ -->
+    <nav class="hdr">
+
+        <!--logo-->
+        <div class="hdr-brand">
+            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+        </div>
+
+        <!--nav-main-->
+        <ul class="hdr-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+
+        <!--nav-blocks-->
+        <div class="hdr-right">
+            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
+            <a class="est" href=""><span>Est 2027</span></a>
+        </div>
+
+    </nav>
+
+    <main class="page">
+
+        <!-- ================================
+             PAGE HEAD — eyebrow + h1 + intro + anchor links
+             ================================ -->
+        <section class="page-head" aria-labelledby="menu-title">
+            <p class="eyebrow">Menu</p>
+            <h1 id="menu-title">Menu</h1>
+            <p>Everything we serve, from espresso to cheesecake. Prices are TBA — ask us at the counter or drop us a message on the Contact page.</p>
+            <div class="menu-anchors">
+                <a href="#minuman">Minuman</a>
+                <a href="#makanan">Makanan</a>
+                <a href="#paket-hemat">Paket Hemat</a>
+            </div>
+        </section>
+
+        <!-- ================================
+             BESTSELLERS — featured bundles
+             (same 3 cards as index.html)
+             ================================ -->
+        <section class="featured" id="bestsellers" aria-labelledby="bestsellers-title">
+            <div class="section-head">
+                <h2 class="eyebrow" id="bestsellers-title">Bestsellers</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
+                    <h3>The Early Riser</h3>
+                    <p>Bold Americano with a flaky, buttery croissant. The perfect way to start your morning.</p>
+                    <span class="price">Rp.49.000</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/2nd-bundle-ascii.png" alt="The Sweet Break bundle">
+                    <h3>The Sweet Break</h3>
+                    <p>Smooth Caffè Latte with a warm, soft cinnamon roll. Your afternoon pick-me-up.</p>
+                    <span class="price">Rp.59.000</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/3rd-bundle-ascii.png" alt="The Sweet Treat bundle">
+                    <h3>The Sweet Treat</h3>
+                    <p>Creamy Caffè Latte with a slice of rich New York Cheesecake. Slow down and indulge.</p>
+                    <span class="price">Rp.69.000</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================
+             MINUMAN — beverages
+             ================================ -->
+        <section class="menu-category" id="minuman" aria-labelledby="minuman-title">
+            <h2 id="minuman-title">☕ Minuman</h2>
+
+            <div class="menu-subgroup">
+                <h3>Classic Black</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Espresso</span>
+                        <span class="menu-desc">Ekstrak kopi murni yang pekat dan intens.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Americano</span>
+                        <span class="menu-desc">Espresso dengan tambahan air panas (Tersedia Panas / Dingin).</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Cold Brew</span>
+                        <span class="menu-desc">Kopi seduh dingin, bertekstur halus dan rendah asam.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>Milk Based</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Caffè Latte</span>
+                        <span class="menu-desc">Espresso dengan susu steamed lembut dan foam tipis.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Cappuccino</span>
+                        <span class="menu-desc">Espresso dengan susu dan busa tebal di atasnya.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Cafè Mocha</span>
+                        <span class="menu-desc">Perpaduan espresso, cokelat premium, dan susu.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Es Kopi Susu Aren</span>
+                        <span class="menu-desc">Espresso, susu segar, dan manisnya gula aren alami.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>The Latte Series</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Matcha Latte</span>
+                        <span class="menu-desc">Teh hijau Jepang premium dengan rasa manis-pahit yang seimbang (Tersedia Panas / Dingin).</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Hojicha Latte</span>
+                        <span class="menu-desc">Teh hijau panggang Jepang dengan aroma smoky dan earthy yang unik (Tersedia Panas / Dingin).</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Premium Chocolate</span>
+                        <span class="menu-desc">Minuman cokelat hitam pekat yang kaya rasa dan creamy (Tersedia Panas / Dingin).</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Red Velvet Latte</span>
+                        <span class="menu-desc">Minuman manis lembut khas kue red velvet dengan sentuhan vanila.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>Refresher &amp; Mocktails</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Berry Matcha</span>
+                        <span class="menu-desc">Perpaduan pure matcha, susu, dan selai stroberi segar di dasar gelas.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Mango Mint Macchiato</span>
+                        <span class="menu-desc">Jus mangga segar dengan soda, daun mint, dan lapisan cheese foam.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Classic Iced Lemon Tea</span>
+                        <span class="menu-desc">Teh hitam premium dengan perasan lemon asli yang menyegarkan.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Lychee Tea Sparkler</span>
+                        <span class="menu-desc">Teh rasa leci dengan buah leci asli dan sentuhan soda dingin.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>Ice Cream Treats</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Affogato</span>
+                        <span class="menu-desc">Satu scoop es krim vanila lembut disiram hot espresso pekat.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Matcha Affogato</span>
+                        <span class="menu-desc">Satu scoop es krim vanila lembut disiram shot pure matcha kental.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Coffee Float</span>
+                        <span class="menu-desc">Es Americano / Kopi Susu dengan topping satu scoop es krim vanila.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Chocolate Float</span>
+                        <span class="menu-desc">Es cokelat premium dengan topping satu scoop es krim vanila.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             MAKANAN — pastries & desserts
+             ================================ -->
+        <section class="menu-category" id="makanan" aria-labelledby="makanan-title">
+            <h2 id="makanan-title">📁 Makanan</h2>
+
+            <div class="menu-subgroup">
+                <h3>The Savory Pastry</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Butter Croissant</span>
+                        <span class="menu-desc">Pastry klasik Prancis yang renyah dengan rasa mentega yang kuat.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Cheese Danish</span>
+                        <span class="menu-desc">Pastry berlapis dengan isian krim keju yang gurih di tengahnya.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Smoked Beef &amp; Cheese Croissant</span>
+                        <span class="menu-desc">Croissant dengan isian daging asap dan keju meleleh.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>The Sweet Pastry</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">Almond Croissant</span>
+                        <span class="menu-desc">Croissant dengan isian pasta almond manis dan taburan almond renyah.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Pain au Chocolat</span>
+                        <span class="menu-desc">Pastry berlapis dengan potongan cokelat hitam di dalamnya.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Cinnamon Roll</span>
+                        <span class="menu-desc">Roti gulung lembut dengan aroma kayu manis dan lapisan gula (icing).</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subgroup">
+                <h3>Cakes &amp; Desserts</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <span class="menu-name">New York Cheesecake</span>
+                        <span class="menu-desc">Cheesecake panggang yang padat, lembut, dan creamy di atas remahan biskuit.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Berry Cheesecake</span>
+                        <span class="menu-desc">Cheesecake dingin dengan siraman selami stroberi atau blueberry segar.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Fudge Brownies with Ice Cream</span>
+                        <span class="menu-desc">Brownies cokelat panggang padat (hangat) disajikan dengan satu scoop es krim vanila.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-name">Ice Cream Scoop</span>
+                        <span class="menu-desc">Es krim vanila/cokelat premium dalam mangkuk kecil dengan siraman saus cokelat.</span>
+                        <span class="menu-price">—</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             PAKET HEMAT — bundling packs
+             ================================ -->
+        <section class="menu-category" id="paket-hemat" aria-labelledby="paket-hemat-title">
+            <h2 id="paket-hemat-title">📁 Paket Hemat</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
+                    <h3>The Early Riser</h3>
+                    <p>1 Americano + 1 Butter Croissant (Cocok untuk sarapan).</p>
+                    <span class="price">—</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/2nd-bundle-ascii.png" alt="The Sweet Break bundle">
+                    <h3>The Sweet Break</h3>
+                    <p>1 Caffè Latte + 1 Cinnamon Roll (Teman setia kerja sore).</p>
+                    <span class="price">—</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/3rd-bundle-ascii.png" alt="The Choco Lover bundle">
+                    <h3>The Choco Lover</h3>
+                    <p>1 Cafè Mocha + 1 Pain au Chocolat (Kombinasi pas pencinta cokelat).</p>
+                    <span class="price">—</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/1st-bundle-ascii.png" alt="The Green Break bundle">
+                    <h3>The Green Break</h3>
+                    <p>1 Matcha Latte + 1 Almond Croissant (Kombinasi gurih kacang dan matcha).</p>
+                    <span class="price">—</span>
+                </article>
+                <article class="card">
+                    <img src="../Assets/3rd-bundle-ascii.png" alt="The Sweet Treat bundle">
+                    <h3>The Sweet Treat</h3>
+                    <p>1 Caffè Latte + 1 Slice New York Cheesecake (Perpaduan premium untuk bersantai).</p>
+                    <span class="price">—</span>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================
+         FOOTER — shared across all pages
+         ================================ -->
+    <footer class="foot">
+
+        <div class="foot-content">
+
+            <!--footer-left-->
+            <div class="foot-brand">
+                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+                <h1>Down to Earth, Always Grounded</h1>
+                <p>謙虚に、地に足をつけて</p>
+            </div>
+
+            <!--footer-mid-->
+            <div class="foot-exp">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--footer-right-->
+            <div class="foot-right">
+
+                <h4>Visit</h4>
+
+                <div class="foot-visit">
+                    <span class="label">Hours</span>
+                    <span class="line"></span>
+                    <span class="value">9AM-10PM</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Address</span>
+                    <span class="line"></span>
+                    <span class="value">Bitera, Gianyar</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Email</span>
+                    <span class="line"></span>
+                    <span class="value">zrada@company.co</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-bottom-->
+        <div class="foot-bottom">
+            <span class="bottom-left">© 2027 GROUND 0</span>
+            <span class="bottom-right">MADE BY GROUP 3</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>

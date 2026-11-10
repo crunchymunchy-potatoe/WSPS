@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Z.R.A.D.A Coffee & Pastry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- ================================
+         NAVBAR — shared across all pages
+         ================================ -->
+    <nav class="hdr">
+
+        <!--logo-->
+        <div class="hdr-brand">
+            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+        </div>
+
+        <!--nav-main-->
+        <ul class="hdr-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+
+        <!--nav-blocks-->
+        <div class="hdr-right">
+            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
+            <a class="est" href=""><span>Est 2027</span></a>
+        </div>
+
+    </nav>
+
+    <main class="page">
+
+        <!-- ================================
+             PAGE HEAD — eyebrow + h1 + intro
+             ================================ -->
+        <section class="page-head" aria-labelledby="about-title">
+            <p class="eyebrow">About</p>
+            <h1 id="about-title">About us</h1>
+            <p>Z.R.A.D.A is a coffee and pastry spot in Bitera, Gianyar. Built on slow mornings, good beans, and the belief that everything tastes better when it's made with care.</p>
+        </section>
+
+        <!-- ================================
+             OUR STORY — flex row, 2 columns
+             left: img | right: h2, 4x p, blockquote, button
+             ================================ -->
+        <section class="story" aria-labelledby="story-title">
+            <div class="story-grid">
+                <div class="story-img">
+                    <img src="../Assets/hero-img.png" alt="The place or the team">
+                </div>
+                <div class="story-copy">
+                    <h2 id="story-title">How it started</h2>
+                    <p>Five friends, one kitchen, and too many ideas.</p>
+                    <p>We started Z.R.A.D.A because Gianyar needed a place that felt like home — no pretension, just good coffee and better pastries.</p>
+                    <p>Every bundle on the menu came from a real order we got asked to make at 2AM.</p>
+                    <p>Now we're here to keep it simple, grounded, and delicious.</p>
+                    <blockquote>Down to Earth, Always Grounded.</blockquote>
+                    <a class="btn" href="index.html">See the menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             THE NAME — flex row, 2 columns
+             left: big Z.R.A.D.A | right: 3x p
+             ================================ -->
+        <section class="name" aria-labelledby="name-title">
+            <div class="name-grid">
+                <div class="name-title">
+                    <h2 id="name-title">Z.R.A.D.A</h2>
+                </div>
+                <div class="name-copy">
+                    <p>Five initials. One per member.</p>
+                    <p>Zara, Rian, Aria, Dedi, and Arif — the five people who turned a kitchen table into a cafe.</p>
+                    <p>The name isn't an acronym. It's just us, in order.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             SLOGAN — centered text
+             p + p lang="ja"
+             ================================ -->
+        <section class="slogan">
+            <p>Down to Earth, Always Grounded</p>
+            <p lang="ja">謙虚に、地に足をつけて</p>
+        </section>
+
+        <!-- ================================
+             THE TEAM — grid, 5 columns
+             5x article.member (img, h3, p role, p bio)
+             ================================ -->
+        <section class="team" aria-labelledby="team-title">
+            <h2 class="eyebrow" id="team-title">The Team</h2>
+            <div class="team-grid">
+                <article class="member">
+                    <img src="../Assets/hero-img.png" alt="Zara">
+                    <h3>Zara</h3>
+                    <p class="member-role">Founder · Roaster</p>
+                    <p>Starts the day before sunrise and ends it tasting every batch.</p>
+                </article>
+                <article class="member">
+                    <img src="../Assets/hero-img.png" alt="Rian">
+                    <h3>Rian</h3>
+                    <p class="member-role">Pastry Lead</p>
+                    <p>Bakes everything from scratch, usually with flour on her nose.</p>
+                </article>
+                <article class="member">
+                    <img src="../Assets/hero-img.png" alt="Aria">
+                    <h3>Aria</h3>
+                    <p class="member-role">Floor Manager</p>
+                    <p>Knows your order before you do.</p>
+                </article>
+                <article class="member">
+                    <img src="../Assets/hero-img.png" alt="Dedi">
+                    <h3>Dedi</h3>
+                    <p class="member-role">Supply &amp; Logistics</p>
+                    <p>Keeps the beans coming and the fridge full.</p>
+                </article>
+                <article class="member">
+                    <img src="../Assets/hero-img.png" alt="Arif">
+                    <h3>Arif</h3>
+                    <p class="member-role">Everything Else</p>
+                    <p>Fixes what's broken and makes sure the music is right.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================
+             CTA — one flex row: text left, button right
+             ================================ -->
+        <section class="cta">
+            <p>Come say hi.</p>
+            <a class="btn" href="contacts.html">Contact Us</a>
+        </section>
+
+    </main>
+
+    <!-- ================================
+         FOOTER — shared across all pages
+         ================================ -->
+    <footer class="foot">
+
+        <div class="foot-content">
+
+            <!--footer-left-->
+            <div class="foot-brand">
+                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
+                <h1>Down to Earth, Always Grounded</h1>
+                <p>謙虚に、地に足をつけて</p>
+            </div>
+
+            <!--footer-mid-->
+            <div class="foot-exp">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--footer-right-->
+            <div class="foot-right">
+
+                <h4>Visit</h4>
+
+                <div class="foot-visit">
+                    <span class="label">Hours</span>
+                    <span class="line"></span>
+                    <span class="value">9AM-10PM</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Address</span>
+                    <span class="line"></span>
+                    <span class="value">Bitera, Gianyar</span>
+                </div>
+
+                <div class="foot-visit">
+                    <span class="label">Email</span>
+                    <span class="line"></span>
+                    <span class="value">zrada@company.co</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-bottom-->
+        <div class="foot-bottom">
+            <span class="bottom-left">© 2027 GROUND 0</span>
+            <span class="bottom-right">MADE BY GROUP 3</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>

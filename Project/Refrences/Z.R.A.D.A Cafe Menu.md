@@ -7,71 +7,58 @@
 
 ☕ THE COFFEE SHOP MENU
 
+📁 BEVERAGES
 
-📁 MINUMAN (BEVERAGES)
+Classic Black
+- Espresso – Pure, concentrated, and intense coffee extract | IDR 22k
+- Americano – Espresso with added hot water (Hot / Iced) | IDR 28k
+- Cold Brew – Cold-brewed coffee, smooth in texture and low in acidity | IDR 35k
 
+Milk Based
+- Caffè Latte – Espresso with smooth steamed milk and a thin layer of foam | IDR 35k
+- Cappuccino – Espresso with milk and a thick layer of foam on top | IDR 35k
+- Cafè Mocha – A blend of espresso, premium chocolate, and milk | IDR 38k
+- Palm Sugar Milk Coffee – Espresso, fresh milk, and natural palm sugar sweetness | IDR 30k
 
-Classic Black (Kopi Hitam)
+The Latte Series (Creamy Non-Coffee)
+- Matcha Latte – Premium Japanese green tea with a balanced sweet-bitter flavor (Hot / Iced) | IDR 38k
+- Hojicha Latte – Japanese roasted green tea with a unique smoky and earthy aroma (Hot / Iced) | IDR 40k
+- Premium Chocolate – Rich and creamy dark chocolate beverage (Hot / Iced) | IDR 38k
+- Red Velvet Latte – A sweet and smooth beverage inspired by red velvet cake with a touch of vanilla | IDR 36k
 
-• Espresso – Ekstrak kopi murni yang pekat dan intens.
-• Americano – Espresso dengan tambahan air panas (Tersedia Panas / Dingin).
-• Cold Brew – Kopi seduh dingin, bertekstur halus dan rendah asam.
+Refresher & Mocktails (Refreshing Non-Coffee)
+- Berry Matcha – Pure matcha, milk, and fresh strawberry puree at the base | IDR 42k
+- Mango Mint Macchiato – Fresh mango juice with soda, mint leaves, and a layer of cheese foam | IDR 40k
+- Classic Iced Lemon Tea – Premium black tea with freshly squeezed lemon juice | IDR 28k
+- Lychee Tea Sparkler – Lychee-flavored tea with real lychee fruit and a touch of chilled soda | IDR 32k
 
-Milk Based (Kopi Susu)
+Ice Cream Treats (Coffee & Non-Coffee x Ice Cream)
+- Affogato – A scoop of soft vanilla ice cream poured over with a hot espresso shot | IDR 35k
+- Matcha Affogato – A scoop of soft vanilla ice cream poured over with thick pure matcha | IDR 38k
+- Coffee Float – Iced Americano / Milk Coffee topped with a scoop of vanilla ice cream | IDR 38k
+- Chocolate Float – Premium iced chocolate topped with a scoop of vanilla ice cream | IDR 38k
 
-• Caffè Latte – Espresso dengan susu steamed lembut dan foam tipis.
-• Cappuccino – Espresso dengan susu dan busa tebal di atasnya.
-• Cafè Mocha – Perpaduan espresso, cokelat premium, dan susu.
-• Es Kopi Susu Aren – Espresso, susu segar, dan manisnya gula aren alami.
+📁 PASTRIES & DESSERTS
 
-The Latte Series (Non-Kopi Creamy)
+The Savory Pastry
+- Butter Croissant – Classic flaky French pastry with a rich buttery flavor | IDR 25k
+- Cheese Danish – Layered pastry with a savory cream cheese filling in the center | IDR 28k
+- Smoked Beef & Cheese Croissant – Croissant filled with smoked beef and melted cheese | IDR 38k
 
-• Matcha Latte – Teh hijau Jepang premium dengan rasa manis-pahit yang seimbang (Tersedia Panas / Dingin).
-• Hojicha Latte – Teh hijau panggang Jepang dengan aroma smoky dan earthy yang unik (Tersedia Panas / Dingin).
-• Premium Chocolate – Minuman cokelat hitam pekat yang kaya rasa dan creamy (Tersedia Panas / Dingin).
-• Red Velvet Latte – Minuman manis lembut khas kue red velvet dengan sentuhan vanila.
+The Sweet Pastry
+- Almond Croissant – Croissant filled with sweet almond paste and topped with crunchy almonds | IDR 32k
+- Pain au Chocolat – Layered pastry with dark chocolate batons inside | IDR 30k
+- Cinnamon Roll – Soft rolled bread with a cinnamon aroma and icing glaze | IDR 28k
 
-Refresher & Mocktails (Non-Kopi Segar)
+Cakes & Desserts
+- New York Cheesecake – Dense, smooth, and creamy baked cheesecake on a crust base | IDR 45k
+- Berry Cheesecake – Chilled cheesecake topped with fresh strawberry or blueberry puree | IDR 48k
+- Fudge Brownies with Ice Cream – Dense baked chocolate brownies (served warm) with a scoop of vanilla ice cream | IDR 40k
+- Ice Cream Scoop – Premium vanilla or chocolate ice cream in a small bowl with chocolate syrup drizzle | IDR 25k
 
-• Berry Matcha – Perpaduan pure matcha, susu, dan selai stroberi segar di dasar gelas.
-• Mango Mint Macchiato – Jus mangga segar dengan soda, daun mint, dan lapisan cheese foam.
-• Classic Iced Lemon Tea – Teh hitam premium dengan perasan lemon asli yang menyegarkan.
-• Lychee Tea Sparkler – Teh rasa leci dengan buah leci asli dan sentuhan soda dingin.
-
-Ice Cream Treats (Menu Kopi & Non-Kopi x Es Krim)
-
-• Affogato – Satu scoop es krim vanila lembut disiram hot espresso pekat.
-• Matcha Affogato – Satu scoop es krim vanila lembut disiram shot pure matcha kental.
-• Coffee Float – Es Americano / Kopi Susu dengan topping satu scoop es krim vanila.
-• Chocolate Float – Es cokelat premium dengan topping satu scoop es krim vanila.
-
-📁 MAKANAN (PASTRIES & DESSERTS)
-
-
-The Savory Pastry (Rasa Gurih)
-
-• Butter Croissant – Pastry klasik Prancis yang renyah dengan rasa mentega yang kuat.
-• Cheese Danish – Pastry berlapis dengan isian krim keju yang gurih di tengahnya.
-• Smoked Beef & Cheese Croissant – Croissant dengan isian daging asap dan keju meleleh.
-
-The Sweet Pastry (Rasa Manis)
-
-• Almond Croissant – Croissant dengan isian pasta almond manis dan taburan almond renyah.
-• Pain au Chocolat – Pastry berlapis dengan potongan cokelat hitam di dalamnya.
-• Cinnamon Roll – Roti gulung lembut dengan aroma kayu manis dan lapisan gula (icing).
-
-Cakes & Desserts (Hidangan Penutup)
-
-• New York Cheesecake – Cheesecake panggang yang padat, lembut, dan creamy di atas remahan biskuit.
-• Berry Cheesecake – Cheesecake dingin dengan siraman selai stroberi atau blueberry segar.
-• Fudge Brownies with Ice Cream – Brownies cokelat panggang padat (hangat) disajikan dengan satu scoop es krim vanila.
-• Ice Cream Scoop – Es krim vanila/cokelat premium dalam mangkuk kecil dengan siraman saus cokelat.
-
-📁 PAKET HEMAT (BUNDLING PACKS)
-
-• The Early Riser – 1 Americano + 1 Butter Croissant (Cocok untuk sarapan).
-• The Sweet Break – 1 Caffè Latte + 1 Cinnamon Roll (Teman setia kerja sore).
-• The Choco Lover – 1 Cafè Mocha + 1 Pain au Chocolat (Kombinasi pas pencinta cokelat).
-• The Green Break – 1 Matcha Latte + 1 Almond Croissant (Kombinasi gurih kacang dan matcha).
-• The Sweet Treat – 1 Caffè Latte + 1 Slice New York Cheesecake (Perpaduan premium untuk bersantai).
-Menu lengkap Anda sudah siap! Langkah selanjutnya, apakah Anda ingin kita menentukan kisaran harga jual yang pas untuk pasar di Bali/Gianyar, atau ada nama menu yang ingin diganti agar lebih unik?
+📁 BUNDLING PACKS
+- The Early Riser – 1 Americano + 1 Butter Croissant (Perfect for breakfast) | IDR 48k
+- The Sweet Break – 1 Caffè Latte + 1 Cinnamon Roll (Your afternoon work companion) | IDR 55k
+- The Choco Lover – 1 Cafè Mocha + 1 Pain au Chocolat (The ultimate chocolate lover's combo) | IDR 60k
+- The Green Break – 1 Matcha Latte + 1 Almond Croissant (Nutty and matcha perfection) | IDR 62k
+- The Sweet Treat – 1 Caffè Latte + 1 Slice New York Cheesecake (A premium pairing for relaxation) | IDR 72k

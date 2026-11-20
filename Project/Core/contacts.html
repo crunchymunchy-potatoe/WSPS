@@ -1,93 +1,83 @@
 <!DOCTYPE html>
+<!-- Bahasa utama halaman ini adalah bahasa Inggris. -->
 <html lang="en">
 <head>
+    <!-- Pengaturan karakter, judul tab, file desain, dan font website. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us — Z.R.A.D.A Coffee & Pastry</title>
+    <title>Contact Us — Z.R.A.D.A Coffee &amp; Pastry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
 </head>
 <body id="top">
-
-    <!-- ================================
-         NAVBAR — copied from index.html
-         TODO: wire up hrefs to real pages later
-         ================================ -->
-    <nav class="hdr">
-        <div class="hdr-brand">
-            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+    <!-- NAVBAR: navigasi utama untuk membuka empat halaman website. -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <!-- Logo dan nama cafe; tautan nama kembali ke bagian atas halaman. -->
+        <div class="brand">
+            <img class="brand-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+            <a class="brand-name" href="#top">Z.R.A.D.A</a>
         </div>
-        <ul class="hdr-nav">
+
+        <!-- Tautan menuju halaman Home, Menu, About Us, dan Contact Us. -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contacts.html">Contact Us</a></li>
         </ul>
-        <div class="hdr-right">
-            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
-            <a class="est" href=""><span>Est 2027</span></a>
+
+        <!-- Jam buka dan tahun berdiri cafe. -->
+        <div class="nav-info">
+            <span>Open 9AM–10PM</span>
+            <span>Est. 2027</span>
         </div>
     </nav>
 
-    <!-- ================================
-         MAIN CONTENT — contact page
-         ================================ -->
+    <!-- MAIN: seluruh isi utama halaman Contact Us. -->
     <main class="page">
-
-        <!-- Page header: eyebrow + h1 + intro -->
-        <section class="page-head" aria-labelledby="contact-title">
+        <!-- Judul dan pengantar halaman kontak. -->
+        <section class="page-heading" aria-labelledby="contact-title">
             <p class="eyebrow">Contact</p>
-            <h1 id="contact-title">Contact us</h1>
+            <h1 id="contact-title">Contact Us</h1>
             <p>Got questions or want to order ahead? Drop us a message below and we’ll get back to you.</p>
         </section>
 
-        <!-- Two-column layout: form on left, info + FAQ on right -->
-        <section class="contact-main">
-
-            <!-- LEFT COLUMN: CONTACT FORM -->
-            <!-- No backend: uses mailto so it works on static HTML only -->
-            <form action="mailto:zrada@company.co" method="POST" enctype="text/plain" class="contact-form">
-
+        <!-- CONTACT LAYOUT: formulir di kiri dan informasi/FAQ di kanan. -->
+        <section class="contact-layout" aria-label="Contact form and information">
+            <!-- Formulir mengisi email baru melalui aplikasi email pengunjung. -->
+            <form class="contact-form" action="mailto:zrada@company.co" method="POST" enctype="text/plain">
+                <!-- Label terhubung ke input lewat nilai for dan id yang sama. -->
                 <label for="contact-name">Name</label>
+                <!-- required berarti nama harus diisi sebelum formulir dikirim. -->
                 <input type="text" id="contact-name" name="name" placeholder="Your name" required>
 
                 <label for="contact-email">Email</label>
+                <!-- Tipe email memeriksa bentuk alamat email secara dasar. -->
                 <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
 
                 <label for="contact-subject">Subject</label>
-                <input type="text" id="contact-subject" name="subject" placeholder="e.g. Catering inquiry">
+                <input type="text" id="contact-subject" name="subject" placeholder="For example, catering inquiry">
 
                 <label for="contact-message">Message</label>
+                <!-- Kotak teks besar untuk menulis pesan. -->
                 <textarea id="contact-message" name="message" rows="5" placeholder="What can we help you with?"></textarea>
 
-                <button type="submit" class="btn">Send Message</button>
+                <!-- Tombol untuk mengirim isi formulir. -->
+                <button class="button" type="submit">Send Message</button>
             </form>
 
-            <!-- RIGHT COLUMN: INFO + FAQ -->
+            <!-- Informasi kontak: nomor telepon, email, Instagram, dan waktu balasan. -->
             <div class="contact-info">
-
-                <!-- Info rows -->
-                <div class="info-row">
-                    <span class="label">Phone</span>
-                    <span class="value">+62 812-3456-7890</span>
-                </div>
-                <div class="info-row">
-                    <span class="label">Email</span>
-                    <span class="value">zrada@company.co</span>
-                </div>
-                <div class="info-row">
-                    <span class="label">Instagram</span>
-                    <span class="value">@zrada.coffee</span>
-                </div>
-                <div class="info-row">
-                    <span class="label">Reply Time</span>
-                    <span class="value">1-2 days</span>
+                <div class="contact-details">
+                    <p><span>Phone</span><span>+62 812-3456-7890</span></p>
+                    <p><span>Email</span><span>zrada@company.co</span></p>
+                    <p><span>Instagram</span><span>@zrada.coffee</span></p>
+                    <p><span>Reply Time</span><span>1–2 days</span></p>
                 </div>
 
-                <!-- FAQ: <details> + <summary> -->
+                <!-- FAQ: tiap pertanyaan bisa dibuka dan ditutup dengan details. -->
                 <div class="faq">
                     <details>
                         <summary>Do you take walk-ins?</summary>
@@ -95,31 +85,30 @@
                     </details>
                     <details>
                         <summary>Can I order ahead?</summary>
-                        <p>Use the contact form above and we’ll reply within 1-2 days.</p>
+                        <p>Use the contact form above and we’ll reply within 1–2 days.</p>
                     </details>
                     <details>
                         <summary>Where are you located?</summary>
                         <p>Bitera, Gianyar.</p>
                     </details>
                 </div>
-
             </div>
         </section>
-
     </main>
 
-    <!-- ================================
-         FOOTER — copied from index.html
-         ================================ -->
-    <footer class="foot">
-        <div class="foot-content">
-            <div class="foot-brand">
-                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-                <h1>Down to Earth, Always Grounded</h1>
-                <p>謙虚に、地に足をつけて</p>
+    <!-- FOOTER: slogan, tautan halaman, dan informasi kunjungan cafe. -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Logo dan slogan cafe. -->
+            <div class="footer-brand">
+                <img class="footer-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+                <h2>Down to Earth, Always Grounded</h2>
+                <p lang="ja">謙虚に、地に足をつけて</p>
             </div>
-            <div class="foot-exp">
-                <h4>Explore</h4>
+
+            <!-- Tautan menuju halaman lain. -->
+            <div class="footer-links">
+                <h3>Explore</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -127,30 +116,21 @@
                     <li><a href="contacts.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="foot-right">
-                <h4>Visit</h4>
-                <div class="foot-visit">
-                    <span class="label">Hours</span>
-                    <span class="line"></span>
-                    <span class="value">9AM-10PM</span>
-                </div>
-                <div class="foot-visit">
-                    <span class="label">Address</span>
-                    <span class="line"></span>
-                    <span class="value">Bitera, Gianyar</span>
-                </div>
-                <div class="foot-visit">
-                    <span class="label">Email</span>
-                    <span class="line"></span>
-                    <span class="value">zrada@company.co</span>
-                </div>
+
+            <!-- Jam buka, alamat, dan email. -->
+            <div class="footer-visit">
+                <h3>Visit</h3>
+                <p><span>Hours</span><span>9AM–10PM</span></p>
+                <p><span>Address</span><span>Bitera, Gianyar</span></p>
+                <p><span>Email</span><span>zrada@company.co</span></p>
             </div>
         </div>
-        <div class="foot-bottom">
-            <span class="bottom-left">© 2027 GROUND 0</span>
-            <span class="bottom-right">MADE BY GROUP 3</span>
+
+        <!-- Hak cipta dan nama kelompok pembuat website. -->
+        <div class="footer-bottom">
+            <span>© 2027 Ground 0</span>
+            <span>Made by Group 3</span>
         </div>
     </footer>
-
 </body>
 </html>

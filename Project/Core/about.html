@@ -1,134 +1,113 @@
 <!DOCTYPE html>
+<!-- Bahasa utama halaman ini adalah bahasa Inggris. -->
 <html lang="en">
 <head>
+    <!-- Pengaturan karakter, judul tab, file desain, dan font website. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us — Z.R.A.D.A Coffee & Pastry</title>
+    <title>About Us — Z.R.A.D.A Coffee &amp; Pastry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
 </head>
 <body id="top">
-
-    <!-- ================================
-         NAVBAR — shared across all pages
-         ================================ -->
-    <nav class="hdr">
-
-        <!--logo-->
-        <div class="hdr-brand">
-            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+    <!-- NAVBAR: navigasi utama untuk membuka empat halaman website. -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <!-- Logo dan nama cafe; tautan nama kembali ke bagian atas halaman. -->
+        <div class="brand">
+            <img class="brand-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+            <a class="brand-name" href="#top">Z.R.A.D.A</a>
         </div>
 
-        <!--nav-main-->
-        <ul class="hdr-nav">
+        <!-- Tautan menuju halaman Home, Menu, About Us, dan Contact Us. -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contacts.html">Contact Us</a></li>
         </ul>
 
-        <!--nav-blocks-->
-        <div class="hdr-right">
-            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
-            <a class="est" href=""><span>Est 2027</span></a>
+        <!-- Jam buka dan tahun berdiri cafe. -->
+        <div class="nav-info">
+            <span>Open 9AM–10PM</span>
+            <span>Est. 2027</span>
         </div>
-
     </nav>
 
+    <!-- MAIN: seluruh isi utama halaman About Us. -->
     <main class="page">
-
-        <!-- ================================
-             PAGE HEAD — eyebrow + h1 + intro
-             ================================ -->
-        <section class="page-head" aria-labelledby="about-title">
+        <!-- Judul dan pengantar singkat tentang cafe. -->
+        <section class="page-heading" aria-labelledby="about-title">
             <p class="eyebrow">About</p>
-            <h1 id="about-title">About us</h1>
+            <h1 id="about-title">About Us</h1>
             <p>Z.R.A.D.A is a coffee and pastry spot in Bitera, Gianyar. Built on slow mornings, good beans, and the belief that everything tastes better when it's made with care.</p>
         </section>
 
-        <!-- ================================
-             OUR STORY — flex row, 2 columns
-             left: img | right: h2, 4x p, blockquote, button
-             ================================ -->
+        <!-- CERITA CAFE: foto dan teks tentang awal berdirinya cafe. -->
         <section class="story" aria-labelledby="story-title">
-            <div class="story-grid">
-                <div class="story-img">
-                    <img src="../Assets/hero-img.png" alt="The place or the team">
-                </div>
-                <div class="story-copy">
-                    <h2 id="story-title">How it started</h2>
-                    <p>Five friends, one kitchen, and too many ideas.</p>
-                    <p>We started Z.R.A.D.A because Gianyar needed a place that felt like home — no pretension, just good coffee and better pastries.</p>
-                    <p>Every bundle on the menu came from a real order we got asked to make at 2AM.</p>
-                    <p>Now we're here to keep it simple, grounded, and delicious.</p>
-                    <blockquote>Down to Earth, Always Grounded.</blockquote>
-                    <a class="btn" href="index.html">See the menu</a>
-                </div>
+            <img class="story-image" src="../Assets/hero-img.png" alt="A view of Z.R.A.D.A coffee">
+            <div class="story-text">
+                <h2 id="story-title">How it started</h2>
+                <p>Five friends, one kitchen, and too many ideas.</p>
+                <p>We started Z.R.A.D.A because Gianyar needed a place that felt like home — no pretension, just good coffee and better pastries.</p>
+                <p>Every bundle on the menu came from a real order we got asked to make at 2AM.</p>
+                <p>Now we're here to keep it simple, grounded, and delicious.</p>
+                <blockquote>Down to Earth, Always Grounded.</blockquote>
+                <a class="button" href="menu.html">See the Menu</a>
             </div>
         </section>
 
-        <!-- ================================
-             THE NAME — flex row, 2 columns
-             left: big Z.R.A.D.A | right: 3x p
-             ================================ -->
-        <section class="name" aria-labelledby="name-title">
-            <div class="name-grid">
-                <div class="name-title">
-                    <h2 id="name-title">Z.R.A.D.A</h2>
-                </div>
-                <div class="name-copy">
-                    <p>Five initials. One per member.</p>
-                    <p>Zhagar, Rio, Ayu, Dhira, and Amy— the five people who turned a kitchen table into a cafe.</p>
-                    <p>The name isn't an acronym. It's just us, in order.</p>
-                </div>
+        <!-- ARTI NAMA: menjelaskan nama Z.R.A.D.A dan para pendirinya. -->
+        <section class="name-section" aria-labelledby="name-title">
+            <h2 id="name-title">Z.R.A.D.A</h2>
+            <div>
+                <p>Five initials. One per member.</p>
+                <p>Zhagar, Rio, Ayu, Dhira, and Amy — the five people who turned a kitchen table into a cafe.</p>
+                <p>The name isn't an acronym. It's just us, in order.</p>
             </div>
         </section>
 
-        <!-- ================================
-             SLOGAN — centered text
-             p + p lang="ja"
-             ================================ -->
+        <!-- SLOGAN: menampilkan slogan cafe dalam bahasa Inggris dan Jepang. -->
         <section class="slogan">
             <p>Down to Earth, Always Grounded</p>
-            <p lang="ja">謙虚に、地に足をつけて</p>
+            <p class="japanese" lang="ja">謙虚に、地に足をつけて</p>
         </section>
 
-        <!-- ================================
-             THE TEAM — grid, 5 columns
-             5x article.member (img, h3, p role, p bio)
-             ================================ -->
+        <!-- TIM: kartu anggota berisi nama, tugas, dan deskripsi singkat. -->
         <section class="team" aria-labelledby="team-title">
             <h2 class="eyebrow" id="team-title">The Team</h2>
             <div class="team-grid">
-                <article class="member">
-                    <img src="../Assets/hero-img.png" alt="Zara">
+                <article class="team-member">
+                    <img src="../Assets/hero-img.png" alt="">
                     <h3>Zhagar</h3>
                     <p class="member-role">Founder · Roaster</p>
                     <p>Starts the day before sunrise and ends it tasting every batch.</p>
                 </article>
-                <article class="member">
-                    <img src="../Assets/hero-img.png" alt="Rian">
+
+                <article class="team-member">
+                    <img src="../Assets/hero-img.png" alt="">
                     <h3>Rio</h3>
                     <p class="member-role">Pastry Lead</p>
                     <p>Bakes everything from scratch, usually with flour on her nose.</p>
                 </article>
-                <article class="member">
-                    <img src="../Assets/hero-img.png" alt="Aria">
+
+                <article class="team-member">
+                    <img src="../Assets/hero-img.png" alt="">
                     <h3>Ayu</h3>
                     <p class="member-role">Floor Manager</p>
                     <p>Knows your order before you do.</p>
                 </article>
-                <article class="member">
-                    <img src="../Assets/hero-img.png" alt="Dedi">
+
+                <article class="team-member">
+                    <img src="../Assets/hero-img.png" alt="">
                     <h3>Dhira</h3>
                     <p class="member-role">Supply &amp; Logistics</p>
                     <p>Keeps the beans coming and the fridge full.</p>
                 </article>
-                <article class="member">
-                    <img src="../Assets/hero-img.png" alt="Arif">
+
+                <article class="team-member">
+                    <img src="../Assets/hero-img.png" alt="">
                     <h3>Amy</h3>
                     <p class="member-role">Everything Else</p>
                     <p>Fixes what's broken and makes sure the music is right.</p>
@@ -136,33 +115,26 @@
             </div>
         </section>
 
-        <!-- ================================
-             CTA — one flex row: text left, button right
-             ================================ -->
-        <section class="cta">
+        <!-- AJAKAN: tombol ini membuka halaman Contact Us. -->
+        <section class="call-to-action">
             <p>Come say hi.</p>
-            <a class="btn" href="contacts.html">Contact Us</a>
+            <a class="button" href="contacts.html">Contact Us</a>
         </section>
-
     </main>
 
-    <!-- ================================
-         FOOTER — shared across all pages
-         ================================ -->
-    <footer class="foot">
-
-        <div class="foot-content">
-
-            <!--footer-left-->
-            <div class="foot-brand">
-                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-                <h1>Down to Earth, Always Grounded</h1>
-                <p>謙虚に、地に足をつけて</p>
+    <!-- FOOTER: slogan, tautan halaman, dan informasi kunjungan cafe. -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Logo dan slogan cafe. -->
+            <div class="footer-brand">
+                <img class="footer-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+                <h2>Down to Earth, Always Grounded</h2>
+                <p lang="ja">謙虚に、地に足をつけて</p>
             </div>
 
-            <!--footer-mid-->
-            <div class="foot-exp">
-                <h4>Explore</h4>
+            <!-- Tautan menuju halaman lain. -->
+            <div class="footer-links">
+                <h3>Explore</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -171,40 +143,20 @@
                 </ul>
             </div>
 
-            <!--footer-right-->
-            <div class="foot-right">
-
-                <h4>Visit</h4>
-
-                <div class="foot-visit">
-                    <span class="label">Hours</span>
-                    <span class="line"></span>
-                    <span class="value">9AM-10PM</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Address</span>
-                    <span class="line"></span>
-                    <span class="value">Bitera, Gianyar</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Email</span>
-                    <span class="line"></span>
-                    <span class="value">zrada@company.co</span>
-                </div>
-
+            <!-- Jam buka, alamat, dan email. -->
+            <div class="footer-visit">
+                <h3>Visit</h3>
+                <p><span>Hours</span><span>9AM–10PM</span></p>
+                <p><span>Address</span><span>Bitera, Gianyar</span></p>
+                <p><span>Email</span><span>zrada@company.co</span></p>
             </div>
-
         </div>
 
-        <!--footer-bottom-->
-        <div class="foot-bottom">
-            <span class="bottom-left">© 2027 GROUND 0</span>
-            <span class="bottom-right">MADE BY GROUP 3</span>
+        <!-- Hak cipta dan nama kelompok pembuat website. -->
+        <div class="footer-bottom">
+            <span>© 2027 Ground 0</span>
+            <span>Made by Group 3</span>
         </div>
-
     </footer>
-
 </body>
 </html>

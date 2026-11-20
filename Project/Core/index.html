@@ -1,80 +1,71 @@
-<!DOCTYPE html
+<!DOCTYPE html>
+<!-- Bahasa utama halaman ini adalah bahasa Inggris. -->
 <html lang="en">
 <head>
+    <!-- Pengaturan karakter dan tampilan agar halaman menyesuaikan layar. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z.R.A.D.A — Coffee &amp; Pastry</title>
+    <!-- Menghubungkan halaman ini dengan file desain bersama. -->
     <link rel="stylesheet" href="style.css">
+    <!-- Mengambil font tambahan dari Google Fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
 </head>
 <body id="top">
-
-    <!-- ================================
-         NAVBAR — shared across all pages
-         TODO: wire up About Us & Contact Us hrefs to real pages later
-         ================================ -->
-    <nav class="hdr">
-
-        <!--logo-->
-        <div class="hdr-brand">
-            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+    <!-- NAVBAR: bar paling atas website untuk berpindah ke halaman lain. -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <!-- Logo dan nama cafe; nama membawa pengunjung kembali ke bagian atas. -->
+        <div class="brand">
+            <img class="brand-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+            <a class="brand-name" href="#top">Z.R.A.D.A</a>
         </div>
 
-        <!--nav-main-->
-        <ul class="hdr-nav">
+        <!-- Tautan menuju halaman utama, menu, tentang kami, dan kontak. -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contacts.html">Contact Us</a></li>
         </ul>
 
-        <!--nav-blocks-->
-        <div class="hdr-right">
-            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
-            <a class="est" href=""><span>Est 2027</span></a>
+        <!-- Informasi singkat tentang jam buka dan tahun berdiri. -->
+        <div class="nav-info">
+            <span>Open 9AM–10PM</span>
+            <span>Est. 2027</span>
         </div>
-
     </nav>
 
+    <!-- MAIN: isi utama halaman Home. -->
     <main class="page">
-
-        <!-- ================================
-             HERO — landing banner with CTA buttons
-             ================================ -->
+        <!-- HERO: bagian pembuka berisi nama cafe, slogan, tombol, dan gambar. -->
         <section class="hero" aria-labelledby="hero-title">
-
-            <div class="hero-copy">
+            <div class="hero-text">
                 <p class="eyebrow">Coffee &amp; Pastry · Gianyar</p>
-                <h1 class="hero-title" id="hero-title">Z.R.A.D.A</h1>
+                <h1 id="hero-title">Z.R.A.D.A</h1>
                 <p class="hero-slogan">Down to Earth, Always Grounded</p>
-                <p class="hero-jp" lang="ja">謙虚に、地に足をつけて</p>
+                <p class="japanese" lang="ja">謙虚に、地に足をつけて</p>
 
-                <div class="hero-actions">
-                    <a class="btn" href="menu.html">View Menu</a>
-                    <a class="btn" href="contacts.html">Contacts Us</a>
+                <!-- Tombol ini mengarahkan pengunjung ke menu dan halaman kontak. -->
+                <div class="hero-buttons">
+                    <a class="button" href="menu.html">View Menu</a>
+                    <a class="button" href="contacts.html">Contact Us</a>
                 </div>
             </div>
 
-            <figure class="hero-visual">
-                <img src="../Assets/hero-img.png" alt="A cup of Zrada coffee">
-            </figure>
-
+            <!-- Gambar utama; teks alt dibacakan oleh pembaca layar. -->
+            <img class="hero-image" src="../Assets/hero-img.png" alt="A cup of Z.R.A.D.A coffee">
         </section>
 
-        <!-- ================================
-             FEATURED — bundle cards grid
-             ================================ -->
-        <section class="featured" id="featured" aria-labelledby="featured-title">
-
-            <div class="section-head">
-                <h2 class="eyebrow" id="featured-title">Bestseller</h2>
+        <!-- FEATURED: menampilkan tiga paket yang paling populer. -->
+        <section class="featured" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <h2 class="eyebrow" id="featured-title">Bestsellers</h2>
             </div>
 
+            <!-- Setiap card berisi gambar, nama paket, deskripsi, dan harga. -->
             <div class="card-grid">
-
                 <article class="card">
                     <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
                     <h3>The Early Riser</h3>
@@ -95,31 +86,23 @@
                     <p>1 Caffè Latte + 1 Slice New York Cheesecake (A premium pairing for relaxation).</p>
                     <span class="price">IDR 72k</span>
                 </article>
-
             </div>
-
-
-
+        </section>
     </main>
 
-    <!-- ================================
-         FOOTER — shared across all pages
-         Explore links + visit info + bottom strip
-         ================================ -->
-    <footer class="foot">
-
-        <div class="foot-content">
-
-            <!--footer-left-->
-            <div class="foot-brand">
-                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-                <h1>Down to Earth, Always Grounded</h1>
-                <p>謙虚に、地に足をつけて</p>
+    <!-- FOOTER: informasi cafe dan tautan yang muncul di bagian bawah. -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Identitas cafe dan slogan. -->
+            <div class="footer-brand">
+                <img class="footer-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+                <h2>Down to Earth, Always Grounded</h2>
+                <p lang="ja">謙虚に、地に足をつけて</p>
             </div>
 
-            <!--footer-mid-->
-            <div class="foot-exp">
-                <h4>Explore</h4>
+            <!-- Tautan untuk berpindah ke halaman website. -->
+            <div class="footer-links">
+                <h3>Explore</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -128,40 +111,20 @@
                 </ul>
             </div>
 
-            <!--footer-right-->
-            <div class="foot-right">
-
-                <h4>Visit</h4>
-
-                <div class="foot-visit">
-                    <span class="label">Hours</span>
-                    <span class="line"></span>
-                    <span class="value">9AM-10PM</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Address</span>
-                    <span class="line"></span>
-                    <span class="value">Bitera, Gianyar</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Email</span>
-                    <span class="line"></span>
-                    <span class="value">zrada@company.co</span>
-                </div>
-
+            <!-- Jam buka, alamat, dan email cafe. -->
+            <div class="footer-visit">
+                <h3>Visit</h3>
+                <p><span>Hours</span><span>9AM–10PM</span></p>
+                <p><span>Address</span><span>Bitera, Gianyar</span></p>
+                <p><span>Email</span><span>zrada@company.co</span></p>
             </div>
-
         </div>
 
-        <!--footer-bottom-->
-        <div class="foot-bottom">
-            <span class="bottom-left">© 2027 GROUND 0</span>
-            <span class="bottom-right">MADE BY GROUP 3</span>
+        <!-- Baris paling bawah berisi hak cipta dan nama pembuat. -->
+        <div class="footer-bottom">
+            <span>© 2027 Ground 0</span>
+            <span>Made by Group 3</span>
         </div>
-
     </footer>
-
 </body>
 </html>

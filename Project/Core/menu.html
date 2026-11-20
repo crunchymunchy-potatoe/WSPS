@@ -1,67 +1,61 @@
 <!DOCTYPE html>
+<!-- Bahasa utama halaman ini adalah bahasa Inggris. -->
 <html lang="en">
 <head>
+    <!-- Pengaturan karakter, judul tab, file desain, dan font website. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu — Z.R.A.D.A Coffee & Pastry</title>
+    <title>Menu — Z.R.A.D.A Coffee &amp; Pastry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
 </head>
 <body id="top">
-
-    <!-- ================================
-         NAVBAR — shared across all pages
-         ================================ -->
-    <nav class="hdr">
-
-        <!--logo-->
-        <div class="hdr-brand">
-            <img class="hdr-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-            <a class="hdr-name" href="#top">Z.R.A.D.A</a>
+    <!-- NAVBAR: navigasi utama untuk membuka empat halaman website. -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <!-- Logo dan nama cafe; tautan nama kembali ke bagian atas halaman. -->
+        <div class="brand">
+            <img class="brand-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+            <a class="brand-name" href="#top">Z.R.A.D.A</a>
         </div>
 
-        <!--nav-main-->
-        <ul class="hdr-nav">
+        <!-- Tautan menuju halaman Home, Menu, About Us, dan Contact Us. -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contacts.html">Contact Us</a></li>
         </ul>
 
-        <!--nav-blocks-->
-        <div class="hdr-right">
-            <a class="time" href=""><span>OPEN 9AM-10PM</span></a>
-            <a class="est" href=""><span>Est 2027</span></a>
+        <!-- Jam buka dan tahun berdiri cafe. -->
+        <div class="nav-info">
+            <span>Open 9AM–10PM</span>
+            <span>Est. 2027</span>
         </div>
-
     </nav>
 
+    <!-- MAIN: semua bagian konten utama halaman Menu. -->
     <main class="page">
-
-        <!-- ================================
-             PAGE HEAD — eyebrow + h1 + intro + anchor links
-             ================================ -->
-        <section class="page-head" aria-labelledby="menu-title">
+        <!-- Judul, keterangan, dan tautan lompat ke kategori menu. -->
+        <section class="page-heading" aria-labelledby="menu-title">
             <p class="eyebrow">Menu</p>
             <h1 id="menu-title">Menu</h1>
             <p>Everything we serve, from espresso to cheesecake. Prices in IDR — ask us at the counter or drop us a message on the Contact page.</p>
-            <div class="menu-anchors">
+            <!-- Tautan ini menggulir halaman langsung ke kategori yang dipilih. -->
+            <div class="menu-links">
                 <a href="#beverages">Beverages</a>
                 <a href="#pastries">Pastries &amp; Desserts</a>
-                <a href="#bundling-packs">Bundling Packs</a>
+                <a href="#bundles">Bundling Packs</a>
             </div>
         </section>
 
-        <!-- ================================
-             BESTSELLERS — featured bundles
-             (same 3 cards as index.html)
-             ================================ -->
-        <section class="featured" id="bestsellers" aria-labelledby="bestsellers-title">
-            <div class="section-head">
+        <!-- BESTSELLERS: tiga paket populer yang ditampilkan lebih menonjol. -->
+        <section class="featured" aria-labelledby="bestsellers-title">
+            <div class="section-heading">
                 <h2 class="eyebrow" id="bestsellers-title">Bestsellers</h2>
             </div>
+
             <div class="card-grid">
                 <article class="card">
                     <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
@@ -84,218 +78,204 @@
             </div>
         </section>
 
-        <!-- ================================
-             BEVERAGES
-             ================================ -->
+        <!-- Setiap menu-item berisi nama produk, deskripsi, dan harga. -->
         <section class="menu-category" id="beverages" aria-labelledby="beverages-title">
-            <h2 id="beverages-title">☕ Beverages</h2>
+            <h2 id="beverages-title">Beverages</h2>
 
-            <div class="menu-subgroup">
+            <!-- Kelompok kopi hitam. -->
+            <div class="menu-group">
                 <h3>Classic Black</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Espresso</span>
-                        <span class="menu-desc">Pure, concentrated, and intense coffee extract.</span>
-                        <span class="menu-price">IDR 22k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Americano</span>
-                        <span class="menu-desc">Espresso with added hot water (Hot / Iced).</span>
-                        <span class="menu-price">IDR 28k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Cold Brew</span>
-                        <span class="menu-desc">Cold-brewed coffee, smooth in texture and low in acidity.</span>
-                        <span class="menu-price">IDR 35k</span>
-                    </div>
+                <div class="menu-item">
+                    <span class="menu-name">Espresso</span>
+                    <span class="menu-description">Pure, concentrated, and intense coffee extract.</span>
+                    <span class="menu-price">IDR 22k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Americano</span>
+                    <span class="menu-description">Espresso with added hot water (Hot / Iced).</span>
+                    <span class="menu-price">IDR 28k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Cold Brew</span>
+                    <span class="menu-description">Cold-brewed coffee, smooth in texture and low in acidity.</span>
+                    <span class="menu-price">IDR 35k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
+            <!-- Kelompok minuman kopi dengan susu. -->
+            <div class="menu-group">
                 <h3>Milk Based</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Caffè Latte</span>
-                        <span class="menu-desc">Espresso with smooth steamed milk and a thin layer of foam.</span>
-                        <span class="menu-price">IDR 35k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Cappuccino</span>
-                        <span class="menu-desc">Espresso with milk and a thick layer of foam on top.</span>
-                        <span class="menu-price">IDR 35k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Cafè Mocha</span>
-                        <span class="menu-desc">A blend of espresso, premium chocolate, and milk.</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Palm Sugar Milk Coffee</span>
-                        <span class="menu-desc">Espresso, fresh milk, and natural palm sugar sweetness.</span>
-                        <span class="menu-price">IDR 30k</span>
-                    </div>
+                <div class="menu-item">
+                    <span class="menu-name">Caffè Latte</span>
+                    <span class="menu-description">Espresso with smooth steamed milk and a thin layer of foam.</span>
+                    <span class="menu-price">IDR 35k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Cappuccino</span>
+                    <span class="menu-description">Espresso with milk and a thick layer of foam on top.</span>
+                    <span class="menu-price">IDR 35k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Cafè Mocha</span>
+                    <span class="menu-description">A blend of espresso, premium chocolate, and milk.</span>
+                    <span class="menu-price">IDR 38k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Palm Sugar Milk Coffee</span>
+                    <span class="menu-description">Espresso, fresh milk, and natural palm sugar sweetness.</span>
+                    <span class="menu-price">IDR 30k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
+            <!-- Kelompok latte dan minuman non-kopi. -->
+            <div class="menu-group">
                 <h3>The Latte Series</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Matcha Latte</span>
-                        <span class="menu-desc">Premium Japanese green tea with a balanced sweet-bitter flavor (Hot / Iced).</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Hojicha Latte</span>
-                        <span class="menu-desc">Japanese roasted green tea with a unique smoky and earthy aroma (Hot / Iced).</span>
-                        <span class="menu-price">IDR 40k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Premium Chocolate</span>
-                        <span class="menu-desc">Rich and creamy dark chocolate beverage (Hot / Iced).</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Red Velvet Latte</span>
-                        <span class="menu-desc">A sweet and smooth beverage inspired by red velvet cake with a touch of vanilla.</span>
-                        <span class="menu-price">IDR 36k</span>
-                    </div>
+                <div class="menu-item">
+                    <span class="menu-name">Matcha Latte</span>
+                    <span class="menu-description">Premium Japanese green tea with a balanced sweet-bitter flavor (Hot / Iced).</span>
+                    <span class="menu-price">IDR 38k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Hojicha Latte</span>
+                    <span class="menu-description">Japanese roasted green tea with a unique smoky and earthy aroma (Hot / Iced).</span>
+                    <span class="menu-price">IDR 40k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Premium Chocolate</span>
+                    <span class="menu-description">Rich and creamy dark chocolate beverage (Hot / Iced).</span>
+                    <span class="menu-price">IDR 38k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Red Velvet Latte</span>
+                    <span class="menu-description">A sweet and smooth beverage inspired by red velvet cake with a touch of vanilla.</span>
+                    <span class="menu-price">IDR 36k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
-                <h3>Refresher &amp; Mocktails</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Berry Matcha</span>
-                        <span class="menu-desc">Pure matcha, milk, and fresh strawberry puree at the base.</span>
-                        <span class="menu-price">IDR 42k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Mango Mint Macchiato</span>
-                        <span class="menu-desc">Fresh mango juice with soda, mint leaves, and a layer of cheese foam.</span>
-                        <span class="menu-price">IDR 40k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Classic Iced Lemon Tea</span>
-                        <span class="menu-desc">Premium black tea with freshly squeezed lemon juice.</span>
-                        <span class="menu-price">IDR 28k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Lychee Tea Sparkler</span>
-                        <span class="menu-desc">Lychee-flavored tea with real lychee fruit and a touch of chilled soda.</span>
-                        <span class="menu-price">IDR 32k</span>
-                    </div>
+            <!-- Kelompok minuman segar dan mocktail. -->
+            <div class="menu-group">
+                <h3>Refreshers &amp; Mocktails</h3>
+                <div class="menu-item">
+                    <span class="menu-name">Berry Matcha</span>
+                    <span class="menu-description">Pure matcha, milk, and fresh strawberry puree at the base.</span>
+                    <span class="menu-price">IDR 42k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Mango Mint Macchiato</span>
+                    <span class="menu-description">Fresh mango juice with soda, mint leaves, and a layer of cheese foam.</span>
+                    <span class="menu-price">IDR 40k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Classic Iced Lemon Tea</span>
+                    <span class="menu-description">Premium black tea with freshly squeezed lemon juice.</span>
+                    <span class="menu-price">IDR 28k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Lychee Tea Sparkler</span>
+                    <span class="menu-description">Lychee-flavored tea with real lychee fruit and a touch of chilled soda.</span>
+                    <span class="menu-price">IDR 32k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
+            <!-- Kelompok minuman kopi atau matcha dengan es krim. -->
+            <div class="menu-group">
                 <h3>Ice Cream Treats</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Affogato</span>
-                        <span class="menu-desc">A scoop of soft vanilla ice cream poured over with a hot espresso shot.</span>
-                        <span class="menu-price">IDR 35k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Matcha Affogato</span>
-                        <span class="menu-desc">A scoop of soft vanilla ice cream poured over with thick pure matcha.</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Coffee Float</span>
-                        <span class="menu-desc">Iced Americano / Milk Coffee topped with a scoop of vanilla ice cream.</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Chocolate Float</span>
-                        <span class="menu-desc">Premium iced chocolate topped with a scoop of vanilla ice cream.</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
+                <div class="menu-item">
+                    <span class="menu-name">Affogato</span>
+                    <span class="menu-description">A scoop of soft vanilla ice cream poured over with a hot espresso shot.</span>
+                    <span class="menu-price">IDR 35k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Matcha Affogato</span>
+                    <span class="menu-description">A scoop of soft vanilla ice cream poured over with thick pure matcha.</span>
+                    <span class="menu-price">IDR 38k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Coffee Float</span>
+                    <span class="menu-description">Iced Americano / Milk Coffee topped with a scoop of vanilla ice cream.</span>
+                    <span class="menu-price">IDR 38k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Chocolate Float</span>
+                    <span class="menu-description">Premium iced chocolate topped with a scoop of vanilla ice cream.</span>
+                    <span class="menu-price">IDR 38k</span>
                 </div>
             </div>
         </section>
 
-        <!-- ================================
-             PASTRIES & DESSERTS
-             ================================ -->
+        <!-- PASTRIES: daftar pastry, kue, dan hidangan penutup. -->
         <section class="menu-category" id="pastries" aria-labelledby="pastries-title">
-            <h2 id="pastries-title">📁 Pastries &amp; Desserts</h2>
+            <h2 id="pastries-title">Pastries &amp; Desserts</h2>
 
-            <div class="menu-subgroup">
-                <h3>The Savory Pastry</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Butter Croissant</span>
-                        <span class="menu-desc">Classic flaky French pastry with a rich buttery flavor.</span>
-                        <span class="menu-price">IDR 25k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Cheese Danish</span>
-                        <span class="menu-desc">Layered pastry with a savory cream cheese filling in the center.</span>
-                        <span class="menu-price">IDR 28k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Smoked Beef &amp; Cheese Croissant</span>
-                        <span class="menu-desc">Croissant filled with smoked beef and melted cheese.</span>
-                        <span class="menu-price">IDR 38k</span>
-                    </div>
+            <!-- Pastry dengan rasa gurih. -->
+            <div class="menu-group">
+                <h3>Savory Pastries</h3>
+                <div class="menu-item">
+                    <span class="menu-name">Butter Croissant</span>
+                    <span class="menu-description">Classic flaky French pastry with a rich buttery flavor.</span>
+                    <span class="menu-price">IDR 25k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Cheese Danish</span>
+                    <span class="menu-description">Layered pastry with a savory cream cheese filling in the center.</span>
+                    <span class="menu-price">IDR 28k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Smoked Beef &amp; Cheese Croissant</span>
+                    <span class="menu-description">Croissant filled with smoked beef and melted cheese.</span>
+                    <span class="menu-price">IDR 38k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
-                <h3>The Sweet Pastry</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">Almond Croissant</span>
-                        <span class="menu-desc">Croissant filled with sweet almond paste and topped with crunchy almonds.</span>
-                        <span class="menu-price">IDR 32k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Pain au Chocolat</span>
-                        <span class="menu-desc">Layered pastry with dark chocolate batons inside.</span>
-                        <span class="menu-price">IDR 30k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Cinnamon Roll</span>
-                        <span class="menu-desc">Soft rolled bread with a cinnamon aroma and icing glaze.</span>
-                        <span class="menu-price">IDR 28k</span>
-                    </div>
+            <!-- Pastry dengan rasa manis. -->
+            <div class="menu-group">
+                <h3>Sweet Pastries</h3>
+                <div class="menu-item">
+                    <span class="menu-name">Almond Croissant</span>
+                    <span class="menu-description">Croissant filled with sweet almond paste and topped with crunchy almonds.</span>
+                    <span class="menu-price">IDR 32k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Pain au Chocolat</span>
+                    <span class="menu-description">Layered pastry with dark chocolate batons inside.</span>
+                    <span class="menu-price">IDR 30k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Cinnamon Roll</span>
+                    <span class="menu-description">Soft rolled bread with a cinnamon aroma and icing glaze.</span>
+                    <span class="menu-price">IDR 28k</span>
                 </div>
             </div>
 
-            <div class="menu-subgroup">
+            <!-- Kue dan hidangan penutup. -->
+            <div class="menu-group">
                 <h3>Cakes &amp; Desserts</h3>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="menu-name">New York Cheesecake</span>
-                        <span class="menu-desc">Dense, smooth, and creamy baked cheesecake on a crust base.</span>
-                        <span class="menu-price">IDR 45k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Berry Cheesecake</span>
-                        <span class="menu-desc">Chilled cheesecake topped with fresh strawberry or blueberry puree.</span>
-                        <span class="menu-price">IDR 48k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Fudge Brownies with Ice Cream</span>
-                        <span class="menu-desc">Dense baked chocolate brownies (served warm) with a scoop of vanilla ice cream.</span>
-                        <span class="menu-price">IDR 40k</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-name">Ice Cream Scoop</span>
-                        <span class="menu-desc">Premium vanilla or chocolate ice cream in a small bowl with chocolate syrup drizzle.</span>
-                        <span class="menu-price">IDR 25k</span>
-                    </div>
+                <div class="menu-item">
+                    <span class="menu-name">New York Cheesecake</span>
+                    <span class="menu-description">Dense, smooth, and creamy baked cheesecake on a crust base.</span>
+                    <span class="menu-price">IDR 45k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Berry Cheesecake</span>
+                    <span class="menu-description">Chilled cheesecake topped with fresh strawberry or blueberry puree.</span>
+                    <span class="menu-price">IDR 48k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Fudge Brownies with Ice Cream</span>
+                    <span class="menu-description">Dense baked chocolate brownies (served warm) with a scoop of vanilla ice cream.</span>
+                    <span class="menu-price">IDR 40k</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-name">Ice Cream Scoop</span>
+                    <span class="menu-description">Premium vanilla or chocolate ice cream in a small bowl with chocolate syrup drizzle.</span>
+                    <span class="menu-price">IDR 25k</span>
                 </div>
             </div>
         </section>
 
-        <!-- ================================
-             BUNDLING PACKS
-             ================================ -->
-        <section class="menu-category" id="bundling-packs" aria-labelledby="bundling-packs-title">
-            <h2 id="bundling-packs-title">📁 Bundling Packs</h2>
+        <!-- BUNDLING PACKS: kartu paket yang berisi gabungan produk dan harga. -->
+        <section class="menu-category" id="bundles" aria-labelledby="bundles-title">
+            <h2 id="bundles-title">Bundling Packs</h2>
             <div class="card-grid">
                 <article class="card">
                     <img src="../Assets/1st-bundle-ascii.png" alt="The Early Riser bundle">
@@ -329,26 +309,21 @@
                 </article>
             </div>
         </section>
-
     </main>
 
-    <!-- ================================
-         FOOTER — shared across all pages
-         ================================ -->
-    <footer class="foot">
-
-        <div class="foot-content">
-
-            <!--footer-left-->
-            <div class="foot-brand">
-                <img class="foot-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Zrada logo">
-                <h1>Down to Earth, Always Grounded</h1>
-                <p>謙虚に、地に足をつけて</p>
+    <!-- FOOTER: slogan, tautan halaman, dan informasi kunjungan cafe. -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Logo dan slogan cafe. -->
+            <div class="footer-brand">
+                <img class="footer-logo" src="../Assets/Old-Logo/cafe-logo-white.png" alt="Z.R.A.D.A logo">
+                <h2>Down to Earth, Always Grounded</h2>
+                <p lang="ja">謙虚に、地に足をつけて</p>
             </div>
 
-            <!--footer-mid-->
-            <div class="foot-exp">
-                <h4>Explore</h4>
+            <!-- Tautan menuju halaman lain. -->
+            <div class="footer-links">
+                <h3>Explore</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -357,40 +332,20 @@
                 </ul>
             </div>
 
-            <!--footer-right-->
-            <div class="foot-right">
-
-                <h4>Visit</h4>
-
-                <div class="foot-visit">
-                    <span class="label">Hours</span>
-                    <span class="line"></span>
-                    <span class="value">9AM-10PM</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Address</span>
-                    <span class="line"></span>
-                    <span class="value">Bitera, Gianyar</span>
-                </div>
-
-                <div class="foot-visit">
-                    <span class="label">Email</span>
-                    <span class="line"></span>
-                    <span class="value">zrada@company.co</span>
-                </div>
-
+            <!-- Jam buka, alamat, dan email. -->
+            <div class="footer-visit">
+                <h3>Visit</h3>
+                <p><span>Hours</span><span>9AM–10PM</span></p>
+                <p><span>Address</span><span>Bitera, Gianyar</span></p>
+                <p><span>Email</span><span>zrada@company.co</span></p>
             </div>
-
         </div>
 
-        <!--footer-bottom-->
-        <div class="foot-bottom">
-            <span class="bottom-left">© 2027 GROUND 0</span>
-            <span class="bottom-right">MADE BY GROUP 3</span>
+        <!-- Hak cipta dan nama kelompok pembuat website. -->
+        <div class="footer-bottom">
+            <span>© 2027 Ground 0</span>
+            <span>Made by Group 3</span>
         </div>
-
     </footer>
-
 </body>
 </html>

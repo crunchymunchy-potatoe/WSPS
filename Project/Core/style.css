@@ -1,54 +1,18 @@
-/* ==========================================================================
-   Ground Zero / Z.R.A.D.A — shared styles
-   Palette and type families are defined once in :root so every page
-   (index, navbar, footer) can reuse the same design language.
-   ========================================================================== */
-
-:root {
-    --bg: #0A0A0A;
-    --bg-soft: #1F1E1D;
-    --cream: #D8D0C4;
-    --muted: #8A847B;
-    --line: #3A3835;
-    --rust: #C4673A;
-
-    --font-body: "Space Grotesk", system-ui, -apple-system, sans-serif;
-    --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
-    --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-
-    --content: 1200px;
-    --gutter: clamp(1.25rem, 4vw, 2.5rem);
-    --page-width: calc(var(--content) + var(--gutter) + var(--gutter));
-    --section-space: clamp(4rem, 8vw, 7rem);
+/* ATURAN DASAR: mengatur tampilan umum yang dipakai oleh semua halaman. */
+body {
+    margin: 0;
+    background-color: #0a0a0a; /* Warna latar utama website. */
+    color: #d8d0c4; /* Warna teks utama. */
+    font-family: "Space Grotesk", Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* reset ------------------------------------------------------------------ */
-
-*,
-*::before,
-*::after {
+/* Ukuran elemen sudah termasuk padding dan garis tepinya. */
+* {
     box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    background: var(--bg);
-    scroll-behavior: smooth;
-}
-
-body {
-    min-height: 100vh;
-    background: var(--bg);
-    color: var(--cream);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
+/* Gambar tidak akan melebar melebihi tempatnya. */
 img {
     display: block;
     max-width: 100%;
@@ -59,1026 +23,717 @@ a {
     text-decoration: none;
 }
 
-button {
+/* Samakan jenis huruf tombol dan kolom formulir dengan teks halaman. */
+button,
+input,
+textarea {
     font: inherit;
-    color: inherit;
-    background: none;
-    border: 0;
-    cursor: pointer;
 }
 
-ul {
-    list-style: none;
+/* Beri tanda warna saat elemen dipilih dengan keyboard. */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+summary:focus {
+    outline: 2px solid #c4673a;
+    outline-offset: 3px;
 }
 
-::selection {
-    background: var(--rust);
-    color: var(--bg);
-}
-
-:focus-visible {
-    outline: 1px solid var(--rust);
-    outline-offset: 4px;
-}
-
-/* small uppercase labels -------------------------------------------------- */
-
-.eyebrow {
-    display: flex;
+/* NAVBAR: menyusun logo, tautan halaman, dan info cafe di bagian atas. */
+.site-nav {
+    display: flex; /* Menyusun isi navbar dalam satu baris. */
     align-items: center;
-    gap: 0.8rem;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 400;
-    letter-spacing: 0.24em;
-    line-height: 1;
-    text-transform: uppercase;
-    color: var(--muted);
+    gap: 30px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #3a3835;
 }
 
-.eyebrow::before {
-    content: "";
-    flex: none;
-    width: 6px;
-    height: 6px;
-    background: var(--rust);
-}
-
-/* buttons ---------------------------------------------------------------- */
-
-.btn {
-    display: inline-flex;
+.brand {
+    display: flex; /* Menempatkan logo dan nama cafe berdampingan. */
     align-items: center;
-    justify-content: center;
-    min-width: 11.5rem;
-    padding: 1rem 1.75rem;
-    border: 1px solid var(--cream);
-    background: transparent;
-    color: var(--cream);
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.22em;
-    line-height: 1;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    gap: 12px;
 }
 
-.btn:hover {
-    background: var(--cream);
-    color: var(--bg);
-}
-
-/* header — used by the <nav class="hdr"> inside index.html ---------------- */
-
-.hdr {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding-block: 1rem;
-    padding-inline: max(var(--gutter), calc((100vw - var(--content)) / 2));
-    border-bottom: 1px solid var(--line);
-}
-
-.hdr-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-}
-
-.hdr-logo {
-    width: 34px;
-    height: 34px;
+.brand-logo {
+    width: 36px;
+    height: 36px;
     object-fit: contain;
 }
 
-.hdr-name {
-    font-size: 0.95rem;
-    letter-spacing: 0.18em;
+.brand-name {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex; /* Menampilkan tautan halaman secara berjajar. */
+    gap: 28px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a,
+.nav-info {
+    color: #8a847b;
+    font-size: 12px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.footer-links a:hover {
+    color: #d8d0c4;
+}
+
+.nav-info {
+    display: flex; /* Menampilkan jam buka dan tahun secara berjajar. */
+    gap: 12px;
+}
+
+.nav-info span {
+    padding: 8px;
+    border: 1px solid #3a3835;
     white-space: nowrap;
-    transition: color 0.25s ease;
 }
 
-.hdr-name:hover {
-    color: var(--muted);
-}
-
-.hdr-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2.25rem;
-    margin-left: auto;
-    margin-right: 3rem;
-}
-
-.hdr-nav a {
-    position: relative;
-    display: inline-block;
-    padding-block: 0.25rem;
-    color: var(--muted);
-    font-size: 0.78rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    transition: color 0.25s ease;
-}
-
-.hdr-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 1px;
-    background: var(--cream);
-    transition: width 0.45s ease;
-}
-
-.hdr-nav a:hover {
-    color: var(--cream);
-}
-
-.hdr-nav a:hover::after {
-    width: 100%;
-}
-
-.hdr-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.hdr-right a {
-    color: var(--muted);
-}
-
-.time,
-.est {
-    padding: 0.55rem 0.8rem;
-    border: 1px solid var(--line);
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    transition: color 0.25s ease, border-color 0.25s ease;
-}
-
-.time span,
-.est span {
-    color: inherit;
-}
-
-.time:hover,
-.est:hover {
-    color: var(--cream);
-    border-color: var(--cream);
-}
-
-/* page shell ------------------------------------------------------------- */
-
+/* AREA KONTEN: menjaga isi halaman tetap di tengah dan tidak terlalu lebar. */
 .page {
-    width: 100%;
-    max-width: var(--page-width);
-    margin-inline: auto;
-    padding-inline: var(--gutter);
+    max-width: 1248px;
+    margin: 0 auto; /* Jarak kiri dan kanan otomatis agar konten di tengah. */
+    padding: 0 24px;
 }
 
-/* section heading -------------------------------------------------------- */
-
-.section-head {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
-}
-
-.section-head .eyebrow {
-    flex: none;
-}
-
-.section-head::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--line);
-}
-
-/* hero ------------------------------------------------------------------- */
-
-.hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
-    align-items: center;
-    gap: clamp(2.5rem, 8vw, 7.5rem);
-    padding-block: clamp(2.5rem, 6vw, 5rem) 0;
-}
-
-.hero-copy {
-    max-width: 34rem;
-}
-
-.hero-title {
-    margin-top: 1.6rem;
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(4rem, 10vw, 7.5rem);
-    line-height: 0.9;
-    letter-spacing: 0.01em;
+.eyebrow {
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+/* JUDUL HALAMAN: ukuran dan jarak untuk judul serta pengantar halaman. */
+.page-heading {
+    max-width: 800px;
+    margin-top: 80px;
+}
+
+.page-heading h1 {
+    margin: 12px 0;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.page-heading > p:last-of-type {
+    max-width: 680px;
+    color: #8a847b;
+}
+
+/* TOMBOL: tampilan dasar tombol dan tautan ajakan. */
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+    border: 1px solid #d8d0c4;
+    background: transparent;
+    color: #d8d0c4;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #d8d0c4;
+    color: #0a0a0a;
+}
+
+/* HERO HOME: kolom teks dan gambar pada bagian pembuka halaman Home. */
+.hero {
+    display: grid; /* Membuat dua kolom: teks dan gambar. */
+    grid-template-columns: 1fr 1.08fr; /* Kolom kanan sedikit lebih lebar. */
+    align-items: center;
+    gap: 60px;
+    padding-top: 56px;
+}
+
+.hero-text h1 {
+    margin: 24px 0 0;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 112px;
+    font-weight: normal;
+    line-height: 0.9;
 }
 
 .hero-slogan {
-    margin-top: 1.4rem;
-    font-size: clamp(1.1rem, 1.7vw, 1.45rem);
-    line-height: 1.35;
+    margin: 22px 0 0;
+    font-size: 22px;
 }
 
-.hero-jp {
-    margin-top: 0.5rem;
-    color: var(--muted);
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
+.japanese {
+    color: #8a847b;
+    letter-spacing: 1px;
 }
 
-.hero-actions {
-    display: flex;
+.hero-buttons {
+    display: flex; /* Menjajarkan tombol dan mengizinkannya turun baris. */
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: clamp(2rem, 4vw, 3rem);
+    gap: 16px;
+    margin-top: 32px;
 }
 
-.hero-visual {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    background: var(--bg-soft);
-}
-
-.hero-visual img {
+.hero-image {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 4 / 3; /* Menjaga gambar tetap berbentuk persegi panjang. */
+    border: 1px solid #3a3835;
+    background-color: #1f1e1d;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.8s ease;
 }
 
-.hero-visual:hover img {
-    transform: scale(1.03);
-}
-
-/* featured --------------------------------------------------------------- */
-
+/* KARTU PRODUK: mengatur kartu paket, gambar, judul, deskripsi, dan harga. */
 .featured {
-    padding-top: var(--section-space);
+    margin-top: 100px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.section-heading::after {
+    height: 1px;
+    flex-grow: 1;
+    background-color: #3a3835;
+    content: ""; /* Membuat garis dekoratif setelah judul bagian. */
+}
+
+.section-heading h2 {
+    margin: 0;
 }
 
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(1.25rem, 3vw, 2.25rem);
+    display: grid; /* Menata kartu dalam baris dan kolom. */
+    grid-template-columns: repeat(3, 1fr); /* Tiga kartu dengan lebar sama. */
+    gap: 28px;
 }
 
 .card {
-    display: flex;
+    display: flex; /* Menyusun isi setiap kartu dari atas ke bawah. */
     flex-direction: column;
-    padding: 0.75rem 0.75rem 1.25rem;
-    border: 1px solid var(--line);
-    background: transparent;
-    transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    padding: 12px 12px 20px;
+    border: 1px solid #3a3835;
 }
 
 .card:hover {
-    border-color: rgba(216, 208, 196, 0.35);
-    background: #0F0F0E;
-    transform: translateY(-3px);
+    border-color: #8a847b;
 }
 
 .card img {
     width: 100%;
     aspect-ratio: 4 / 3;
-    padding: 0.5rem;
-    border: 1px solid var(--line);
-    background: #060606;
+    padding: 8px;
+    border: 1px solid #3a3835;
+    background-color: #060606;
     object-fit: contain;
-    object-position: center bottom;
 }
 
 .card h3 {
-    margin-top: 1.4rem;
-    padding-inline: 0.5rem;
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(1.5rem, 2.2vw, 1.95rem);
+    margin: 22px 8px 0;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
     line-height: 1.1;
 }
 
 .card p {
-    flex: 1;
-    margin-top: 0.7rem;
-    padding-inline: 0.5rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    flex-grow: 1; /* Mengisi ruang agar harga sejajar di bagian bawah kartu. */
+    margin: 12px 8px 0;
+    color: #8a847b;
+    font-size: 14px;
 }
 
-.card .price {
-    margin-top: 1.5rem;
-    margin-inline: 0.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--line);
-    color: var(--cream);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
+.price {
+    margin: 24px 8px 0;
+    padding-top: 16px;
+    border-top: 1px solid #3a3835;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
-/* footer — used by the <footer class="foot"> inside index.html ------------ */
-
-.foot {
-    width: 100%;
-    max-width: var(--page-width);
-    margin-inline: auto;
-    margin-top: var(--section-space);
-    padding: clamp(3rem, 6vw, 5rem) var(--gutter) 2rem;
-    border-top: 1px solid var(--line);
-}
-
-.foot-content {
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr 1.3fr;
-    gap: clamp(2rem, 5vw, 5rem);
-}
-
-.foot-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.9rem;
-}
-
-.foot-logo {
-    width: 46px;
-    height: 46px;
-    object-fit: contain;
-}
-
-.foot-brand h1 {
-    max-width: 16ch;
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-    line-height: 1.12;
-}
-
-.foot-brand p {
-    color: var(--muted);
-    font-size: 0.82rem;
-    letter-spacing: 0.08em;
-}
-
-.foot-exp {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-}
-
-.foot-exp h4,
-.foot-right h4 {
-    margin-bottom: 0.5rem;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    font-weight: 400;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-}
-
-.foot-exp ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-}
-
-.foot-exp a {
-    color: var(--cream);
-    font-size: 0.9rem;
-    transition: color 0.25s ease;
-}
-
-.foot-exp a:hover {
-    color: var(--muted);
-}
-
-.foot-right {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.foot-visit {
-    display: flex;
+/* HALAMAN ABOUT: mengatur cerita cafe, slogan, anggota tim, dan ajakan kontak. */
+.story {
+    display: grid; /* Menempatkan foto dan cerita dalam dua kolom. */
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 1rem;
-    width: 100%;
+    gap: 64px;
+    margin-top: 100px;
 }
 
-.foot-visit .label {
-    min-width: 5.25rem;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.16em;
+.story-image {
+    width: 100%;
+    border: 1px solid #3a3835;
+    object-fit: cover;
+}
+
+.story-text h2,
+.menu-category h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.story-text p,
+.name-section p {
+    color: #8a847b;
+}
+
+.story-text blockquote {
+    margin: 24px 0;
+    padding-left: 16px;
+    border-left: 3px solid #c4673a;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.name-section {
+    display: grid; /* Membagi bagian arti nama menjadi dua kolom. */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+    margin-top: 100px;
+}
+
+.name-section h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.slogan {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.slogan > p:first-child {
+    font-size: 30px;
+}
+
+.team {
+    margin-top: 100px;
+}
+
+.team-grid {
+    display: grid; /* Menata kartu anggota tim dalam beberapa kolom. */
+    grid-template-columns: repeat(5, 1fr); /* Lima kartu pada layar lebar. */
+    gap: 24px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 12px;
+    border: 1px solid #3a3835;
+    border-radius: 50%;
+    background-color: #1f1e1d;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 0;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.team-member p {
+    color: #8a847b;
+    font-size: 13px;
+}
+
+.team-member .member-role {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.foot-visit .line {
-    flex: 1;
-    height: 1px;
-    background: var(--line);
-}
-
-.foot-visit .value {
-    color: var(--cream);
-    font-size: 0.84rem;
-    text-align: right;
-}
-
-.foot-bottom {
+.call-to-action {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    margin-top: clamp(3rem, 6vw, 5rem);
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--line);
+    gap: 20px;
+    margin-top: 100px;
+    padding-top: 24px;
+    border-top: 1px solid #3a3835;
 }
 
-.foot-bottom span {
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-}
-
-/* responsive ------------------------------------------------------------- */
-
-@media (max-width: 1000px) {
-    .hdr-nav {
-        gap: 1.5rem;
-        margin-right: 1.5rem;
-    }
-}
-
-@media (max-width: 860px) {
-    .hdr {
-        flex-wrap: wrap;
-        row-gap: 0.85rem;
-    }
-
-    .hdr-nav {
-        order: 3;
-        width: 100%;
-        margin: 0;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-
-    .hdr-right {
-        margin-left: auto;
-    }
-
-    .hero,
-    .story-grid,
-    .visit-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero {
-        padding-block: 2.5rem 0;
-    }
-
-    .hero-visual {
-        aspect-ratio: 16 / 10;
-    }
-
-    .visit-media {
-        aspect-ratio: 16 / 9;
-    }
-
-    .card-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .story-copy {
-        max-width: 44rem;
-    }
-
-    .story-members {
-        max-width: 40rem;
-    }
-
-    .foot-content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .foot-right {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (max-width: 620px) {
-    .hdr-right {
-        display: none;
-    }
-
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .story-members {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .story-members .member {
-        aspect-ratio: 1 / 1.1;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-    }
-
-    .visit-row {
-        grid-template-columns: auto 1fr;
-    }
-
-    .visit-row .value {
-        grid-column: 1 / -1;
-        text-align: left;
-    }
-
-    .foot-content {
-        grid-template-columns: 1fr;
-    }
-
-    .foot-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-/* on touch screens there is no hover, so always show the member names */
-@media (hover: none) {
-    .member-name {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-    }
-}
-
-/* ==========================================================================
-   Contact page additions
-   ========================================================================== */
-
-.page-head {
-    margin-top: var(--section-space);
-}
-
-.contact-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(2rem, 5vw, 4rem);
-    margin-top: var(--section-space);
+/* HALAMAN CONTACT: mengatur formulir, info kontak, dan pertanyaan umum. */
+.contact-layout {
+    display: flex; /* Menempatkan formulir dan info kontak berdampingan. */
     align-items: flex-start;
+    gap: 64px;
+    margin-top: 80px;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
 }
 
 .contact-form {
-    flex: 1 1 300px;
-    display: flex;
+    display: flex; /* Menyusun label dan kolom formulir secara vertikal. */
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 12px;
 }
 
-.contact-form label {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
+.contact-form label,
+.contact-details p span:first-child {
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 0.4rem;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--line);
-    background: var(--bg-soft);
-    color: var(--cream);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    box-sizing: border-box;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 1px solid var(--rust);
-    border-color: var(--rust);
+    padding: 12px 16px;
+    border: 1px solid #3a3835;
+    background-color: #1f1e1d;
+    color: #d8d0c4;
 }
 
 .contact-form textarea {
+    min-height: 128px;
     resize: vertical;
-    min-height: 8rem;
 }
 
-.contact-form button.btn {
+.contact-form .button {
     align-self: flex-start;
-    margin-top: 0.5rem;
+    margin-top: 8px;
 }
 
-.contact-info {
-    flex: 1 1 260px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.info-row {
-    display: flex;
+.contact-details p {
+    display: flex; /* Menjauhkan nama info dan nilainya ke sisi berlawanan. */
     justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--line);
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #3a3835;
 }
 
-.info-row .label {
-    min-width: 6rem;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-}
-
-.info-row .value {
-    color: var(--cream);
-    font-size: 0.84rem;
+.contact-details p span:last-child {
     text-align: right;
 }
 
 .faq {
-    margin-top: 1rem;
+    margin-top: 32px;
 }
 
 .faq details {
-    border: 1px solid var(--line);
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.75rem;
-    background: var(--bg-soft);
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    border: 1px solid #3a3835;
+    background-color: #1f1e1d;
 }
 
+/* Menuju pertanyaan untuk membuka jawabannya. */
 .faq summary {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--cream);
     cursor: pointer;
-    list-style: none;
-}
-
-.faq summary::-webkit-details-marker {
-    display: none;
-}
-
-.faq p {
-    margin-top: 0.6rem;
-    color: var(--muted);
-    font-size: 0.86rem;
-    line-height: 1.5;
-}
-
-/* Responsive: stack columns on small screens */
-@media (max-width: 760px) {
-    .contact-main {
-        flex-direction: column;
-    }
-    .contact-info {
-        order: -1;
-    }
-}
-
-/* ==========================================================================
-   About page additions
-   ========================================================================== */
-
-.story {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
-}
-
-.story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(2rem, 6vw, 5rem);
-    align-items: center;
-}
-
-.story-img img {
-    width: 100%;
-    border: 1px solid var(--line);
-    background: var(--bg-soft);
-    object-fit: cover;
-}
-
-.story-copy h2 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: 1rem;
-}
-
-.story-copy p {
-    color: var(--muted);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
-
-.story-copy blockquote {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--cream);
-    margin: 1.5rem 0;
-    padding-left: 1rem;
-    border-left: 3px solid var(--rust);
-}
-
-.name {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
-}
-
-.name-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(2rem, 6vw, 5rem);
-    align-items: center;
-}
-
-.name-title h2 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(3rem, 8vw, 6rem);
-    line-height: 0.9;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    letter-spacing: 0.01em;
 }
 
-.name-copy p {
-    color: var(--muted);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+.faq details p {
+    color: #8a847b;
+    font-size: 14px;
 }
 
-.slogan {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
-    text-align: center;
-}
-
-.slogan p {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-
-.slogan p[lang="ja"] {
-    color: var(--muted);
-    font-size: 1rem;
-    letter-spacing: 0.08em;
-}
-
-.team {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-}
-
-.member img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border: 1px solid var(--line);
-    background: var(--bg-soft);
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 0.75rem;
-}
-
-.member h3 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-}
-
-.member-role {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-}
-
-.member p {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-}
-
-.cta {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* HALAMAN MENU: tautan kategori, daftar produk, deskripsi, dan harga. */
+.menu-links {
+    display: flex; /* Menyusun tautan kategori dan membungkusnya jika perlu. */
     flex-wrap: wrap;
-    gap: 1rem;
-    border-top: 1px solid var(--line);
-    padding-top: 2rem;
+    gap: 12px;
+    margin-top: 24px;
 }
 
-.cta p {
-    font-size: 1rem;
-    color: var(--cream);
-}
-
-/* About page responsive */
-@media (max-width: 860px) {
-    .story-grid,
-    .name-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .team-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .cta {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 620px) {
-    .team-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* ==========================================================================
-   Menu page additions
-   ========================================================================== */
-
-.menu-anchors {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.menu-anchors a {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.14em;
+.menu-links a {
+    padding: 8px 12px;
+    border: 1px solid #3a3835;
+    background-color: #1f1e1d;
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--muted);
-    padding: 0.4rem 0.8rem;
-    border: 1px solid var(--line);
-    background: var(--bg-soft);
-    transition: color 0.25s ease, border-color 0.25s ease;
 }
 
-.menu-anchors a:hover {
-    color: var(--cream);
-    border-color: var(--cream);
+.menu-links a:hover {
+    border-color: #d8d0c4;
+    color: #d8d0c4;
 }
 
 .menu-category {
-    margin-top: var(--section-space);
-    padding-top: var(--section-space);
+    margin-top: 100px;
+    scroll-margin-top: 24px; /* Jarak agar judul tidak menempel di tepi layar. */
 }
 
 .menu-category h2 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 32px;
 }
 
-.menu-subgroup {
-    margin-bottom: clamp(2rem, 4vw, 3rem);
+.menu-group {
+    margin-bottom: 40px;
 }
 
-.menu-subgroup h3 {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    letter-spacing: 0.14em;
+.menu-group h3 {
+    margin-bottom: 16px;
+    color: #c4673a;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--rust);
-    margin-bottom: 1rem;
-}
-
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
 }
 
 .menu-item {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Menyusun nama, deskripsi, dan harga dalam satu baris. */
     align-items: baseline;
-    gap: 1rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--line);
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #3a3835;
 }
 
 .menu-name {
-    font-size: 0.95rem;
-    color: var(--cream);
-    font-weight: 500;
+    min-width: 180px;
 }
 
-.menu-desc {
-    flex: 1;
-    color: var(--muted);
-    font-size: 0.85rem;
-    line-height: 1.5;
-    margin-right: 1rem;
+.menu-description {
+    flex-grow: 1; /* Mengambil ruang kosong di antara nama dan harga. */
+    color: #8a847b;
+    font-size: 14px;
 }
 
 .menu-price {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    color: var(--muted);
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
     white-space: nowrap;
-    flex: none;
 }
 
-/* Menu page responsive */
+/* FOOTER: mengatur slogan cafe, tautan halaman, dan info kunjungan. */
+.site-footer {
+    max-width: 1248px;
+    margin: 100px auto 0;
+    padding: 48px 24px 24px;
+    border-top: 1px solid #3a3835;
+}
+
+.footer-content {
+    display: grid; /* Membagi footer menjadi kolom informasi. */
+    grid-template-columns: 1.3fr 0.7fr 1.3fr;
+    gap: 48px;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-brand h2 {
+    max-width: 280px;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.footer-brand p {
+    color: #8a847b;
+    font-size: 13px;
+}
+
+.footer-links h3,
+.footer-visit h3 {
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    display: flex; /* Menyusun tautan footer ke bawah. */
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links a {
+    font-size: 14px;
+}
+
+.footer-visit p {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #3a3835;
+    font-size: 13px;
+}
+
+.footer-visit p span:first-child {
+    color: #8a847b;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #3a3835;
+    color: #8a847b;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* LAYAR SEDANG: mengubah susunan agar muat di tablet dan layar kecil. */
+@media (max-width: 900px) {
+    .site-nav {
+        flex-wrap: wrap; /* Izinkan isi navbar turun ke baris berikutnya. */
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .hero,
+    .story,
+    .name-section {
+        grid-template-columns: 1fr; /* Ubah dua kolom menjadi satu kolom. */
+    }
+
+    .hero-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tampilkan dua kartu per baris. */
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-visit {
+        grid-column: 1 / -1;
+    }
+}
+
+/* LAYAR PONSEL: sederhanakan jarak dan susun konten menjadi satu kolom. */
 @media (max-width: 620px) {
-    .menu-item {
+    .site-nav {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .nav-info {
+        display: none; /* Sembunyikan info navbar agar ruang lebih lega. */
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .page {
+        padding: 0 16px;
+    }
+
+    .page-heading h1 {
+        font-size: 44px;
+    }
+
+    .hero {
+        gap: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 72px;
+    }
+
+    .hero-buttons {
         flex-direction: column;
+    }
+
+    .card-grid,
+    .team-grid,
+    .footer-content {
+        grid-template-columns: 1fr; /* Tampilkan satu kolom di layar sempit. */
+    }
+
+    .story,
+    .name-section {
+        gap: 32px;
+    }
+
+    .name-section h2 {
+        font-size: 56px;
+    }
+
+    .call-to-action,
+    .contact-layout {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        order: -1; /* Tampilkan info kontak sebelum formulir di ponsel. */
+        width: 100%;
+    }
+
+    .menu-item {
+        flex-direction: column; /* Tumpuk nama, deskripsi, dan harga. */
         align-items: flex-start;
-        gap: 0.25rem;
+        gap: 4px;
     }
 
-    .menu-desc {
-        margin-right: 0;
-        margin-bottom: 0.25rem;
+    .menu-name {
+        min-width: 0;
     }
 
-    .menu-price {
-        align-self: flex-start;
+    .footer-visit {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
     }
 }

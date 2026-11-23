@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bb9c7c1b71f2e3f7",
+        "id": "ec4ae58953f97f5a",
         "type": "tabs",
         "children": [
           {
-            "id": "c3a5fdaf07567f96",
+            "id": "35f617f9a640b3d7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PPT Project/Required Parts.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Required Parts"
+              "title": "New tab"
             }
           }
         ]
@@ -188,14 +184,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "c3a5fdaf07567f96",
+  "active": "35f617f9a640b3d7",
   "lastOpenFiles": [
+    "PPT Project/Required Parts.md",
+    "PPT Project/assets/ascii-art-2026-11-23-07-13-26.png",
+    "PPT Project/assets/ascii-art-2026-11-23-07-13-23.png",
+    "PPT Project/assets/ascii-art-2026-11-23-07-09-36.png",
+    "PPT Project/assets/ascii-art-2026-11-23-07-06-22.png",
     "PPT Project/~$ppt.pptx",
     "PPT Project/ppt.pptx",
     "PPT Project/assets/ascii-art-2026-11-23-01-03-18.png",
     "PPT Project/assets/logo genta.jpg",
     "Untitled.md",
-    "PPT Project/Required Parts.md",
     "PPT Project",
     "Project/Refrences/Z.R.A.D.A Cafe Menu.md",
     "Project/Refrences/Coffe And Pastry Brainstorming.canvas",
@@ -208,7 +208,6 @@
     "Projek Website nya/Referensi/Brainstorming idea.canvas",
     "Projek Website nya/Referensi/Mockup Website.free",
     "Projek Website nya/Referensi/Assets/ground0-footer.svg",
-    "Projek Website nya/Referensi/Assets/ground0-logo-seal.svg",
     "Projek Website nya/Referensi/Website ideas.md",
     "Projek Website nya/Referensi/Coffe And Pastry Brainstorming.canvas",
     "Projek Website nya/Referensi/design.free",
@@ -216,9 +215,6 @@
     "Projek Website nya/Projeknya/navbar.html",
     "Projek Website nya/Projeknya/navbar.Html",
     "Projek Website nya/Referensi/Brainstorming idea 1.canvas",
-    "Projek Website nya/Referensi/Assets/Coffe.png",
-    "Projek Website nya/Referensi/Assets/Pastry2.png",
-    "Projek Website nya/Referensi/Assets/Bike.png",
     "Projek Website nya/Referensi/Assets/Untitled.md",
     "Website Projek sekolah/Website ideas.md",
     "Website Projek sekolah"

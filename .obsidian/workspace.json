@@ -11,10 +11,14 @@
             "id": "c3a5fdaf07567f96",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "PPT Project/Required Parts.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Required Parts"
             }
           }
         ]
@@ -186,6 +190,13 @@
   },
   "active": "c3a5fdaf07567f96",
   "lastOpenFiles": [
+    "PPT Project/~$ppt.pptx",
+    "PPT Project/ppt.pptx",
+    "PPT Project/assets/ascii-art-2026-11-23-01-03-18.png",
+    "PPT Project/assets/logo genta.jpg",
+    "Untitled.md",
+    "PPT Project/Required Parts.md",
+    "PPT Project",
     "Project/Refrences/Z.R.A.D.A Cafe Menu.md",
     "Project/Refrences/Coffe And Pastry Brainstorming.canvas",
     "Project/Assets/main-page-wireframe.svg",
@@ -208,8 +219,6 @@
     "Projek Website nya/Referensi/Assets/Coffe.png",
     "Projek Website nya/Referensi/Assets/Pastry2.png",
     "Projek Website nya/Referensi/Assets/Bike.png",
-    "Projek Website nya/Referensi/Assets/Car.png",
-    "Projek Website nya/Referensi/Assets/Motor.png",
     "Projek Website nya/Referensi/Assets/Untitled.md",
     "Website Projek sekolah/Website ideas.md",
     "Website Projek sekolah"

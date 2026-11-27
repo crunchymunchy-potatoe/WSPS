@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ec4ae58953f97f5a",
+        "id": "120622d2d2ee4514",
         "type": "tabs",
         "children": [
           {
-            "id": "35f617f9a640b3d7",
+            "id": "798b95e59e7ad233",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -184,14 +184,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "35f617f9a640b3d7",
+  "active": "d3d2788688e20fa7",
   "lastOpenFiles": [
+    "Project/Core/index-clusters.svg",
     "PPT Project/Required Parts.md",
+    "PPT Project/Presentation Script.md",
+    "PPT Project/~$ppt.pptx",
     "PPT Project/assets/ascii-art-2026-11-23-07-13-26.png",
     "PPT Project/assets/ascii-art-2026-11-23-07-13-23.png",
     "PPT Project/assets/ascii-art-2026-11-23-07-09-36.png",
     "PPT Project/assets/ascii-art-2026-11-23-07-06-22.png",
-    "PPT Project/~$ppt.pptx",
     "PPT Project/ppt.pptx",
     "PPT Project/assets/ascii-art-2026-11-23-01-03-18.png",
     "PPT Project/assets/logo genta.jpg",

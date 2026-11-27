@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title description">
+  <title id="title">index.html main clusters</title>
+  <desc id="description">Three vertically stacked white outlined blocks on a black background, representing the navbar, main content, and footer.</desc>
+  <rect width="900" height="600" fill="#000"/>
+  <text x="450" y="65" text-anchor="middle" fill="#fff" font-family="monospace" font-size="16">index.html</text>
+
+  <rect x="150" y="110" width="600" height="90" fill="#000" stroke="#fff" stroke-width="2"/>
+  <text x="450" y="165" text-anchor="middle" fill="#fff" font-family="monospace" font-size="24">&lt;--- Navbar ---&gt;</text>
+
+  <rect x="150" y="220" width="600" height="190" fill="#000" stroke="#fff" stroke-width="2"/>
+  <text x="450" y="325" text-anchor="middle" fill="#fff" font-family="monospace" font-size="24">&lt;--- Main ---&gt;</text>
+
+  <rect x="150" y="430" width="600" height="90" fill="#000" stroke="#fff" stroke-width="2"/>
+  <text x="450" y="485" text-anchor="middle" fill="#fff" font-family="monospace" font-size="24">&lt;--- Footer ---&gt;</text>
+</svg>
